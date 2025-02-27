@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TENIS</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/tenis.css') }}"
+        />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="imagenes/x-icon"
+            href="{{ url_for('static', filename='imagenes/pelota de futbol.jpg') }}"
+        />
+    </head>
+<body>
+    <header>
+        <img class="img-logo" src="{{ url_for('static', filename='imagenes/Logo Raqueta de Tenis.png') }}" alt="">
+        <h1>TENIS</h1>
+    </header>
+    <nav>
+        <ul>
+					<li><a href="{{ url_for('index') }}">INICIO</a></li>
+					<li><a href="#seccion1">TENIS ARGENTINO</a></li>
+					<li><a href="#seccion2">TENIS RANKINGS</a></li>
+        </ul>
+		</nav>
+		<!--MAIN-->
+		<h2 class="titulo">NOTICIAS DE TENIS</h2>
+		<main>
+			<h4 class="titulo-1">HISTÓRICO: ROSARIO SERÁ SEDE DE LA COPA DAVIS POR PRIMERA VEZ</h4>
+			<div class="encabezado">
+				<img class="img" src="{{ url_for('static', filename='imagenes/Tenis foto 1.jpg') }}" alt="">
+				<p class="texto">
+					La <b>COPA DAVIS</b> desembarcará en Rosario por primera vez en la historia. El 3 y 4 de febrero se jugará la serie entre Argentina y Kazajistán, correspondiente a los Qualifiers 2024, en el Jockey Club. De esta manera, la máxima competencia por países debutará debutará en la provincia de Santa Fe.
+					El equipo liderado por Guillermo Coria buscará el ascenso a las Finales 2024 tras haber logrado el pase a esta instancia en septiembre, cuando venció a Lituania 4-0 en la serie en la que se celebraron los 100 años de participación en la Copa Davis, con una fiesta en el Buenos Aires Lawn Tennis Club.
+					Si bien el capitán tiene tiempo hasta el 5 de enero para confirmar su lista de convocados, se sabe que Argentina tiene jugadores con destacado presente tanto en singles como en dobles. Los tres singlistas presentes en el cruce contra Lituania mantienen su buen momento en el circuito: Francisco Cerúndolo (21°), Sebastián Báez (28°) y Tomás Etcheverry (30°) permanecen en el top 30. 
+					En dobles cerraron la temporada jugando las ATP Finals tres tenistas nacionales. Máximo González y Andrés Molteni, pareja que disputó las series contra Finlandia y Lituania el año pasado, y Horacio Zeballos, quien fue finalista del certamen junto al español Marcel Granollers. 
+					El equipo kazajo es liderado actualmente por Alexander Bublik (32°), quien alcanzó el 25° puesto en julio, su ranking más alto. El diestro de 26 años participó en la victoria frente a Bulgaria en los playoffs, la última serie de su equipo, y también lo había hecho a comienzos de 2023 en la derrota frente a Chile sobre polvo de ladrillo. Detrás de él en el escalafón están Beibit Zhukayev (188°) de 23 años, Denis Yevseyev (190°), de 30 y Timofey Skatov (222°), de 22.<br>
+					<b>El Historial</b><br>
+					Argentina y Kazajistán se enfrentaron dos veces, en 2011 y 2017. La primera vez, disputada en el Parque Roca, ganó Argentina 5-0 con los triunfos en singles de Juan Mónaco y Juan Martín Del Potro, y en el dobles de Juan Ignacio Chela y Eduardo Schwank. Con la serie ya definida, Mónaco y Chela sellaron el marcador ideal en aquella serie correspondiente a los cuartos de final.
+					En tanto, en 2017, de visitante, Kazajistán se impuso por 3-1. El único punto albiceleste lo consiguió Diego Schwartzman. En aquella oportunidad, el capitán Daniel Orsanic también había convocado a Guido Pella y a los doblistas Máximo González y Andrés Molteni, quienes hicieron su debut en el certamen. La serie significó el descenso de Argentina luego de 16 años ininterrumpidos en el Grupo Mundial.
+					La sede
+					Ubicado en el barrio de Fisherton y con más de 120 años de historia, el Jockey Club de Rosario es uno de los clubes más tradicionales de la provincia de Santa Fe. Para el evento se instalarán tribunas con capacidad para al menos 3 mil personas.
+				</p>
+			</div>
+			<h2 id="seccion1" class="titulo">NOTICIAS DEL TENIS ARGENTINO</h2>
+			<div class="contenedor">
+				<div class="contenedor-0">
+					<h5 class="h5-1">TENISTA TOP</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 2.jpg') }}" alt="">
+							<p class="texto">
+								EL TENISTA TOP QUE TIENE ENTRENADORES DE FEDERER Y DJOKOVIC
+								Uno de los mejores jugadores del mundo construyó un equipo de trabajo que confluye dos personas del entorno del suizo y del serbio.
+								HOLGER RUNE, uno de los mejores tenistas del mundo, tiene la ambición por las nubes. Instalado entre los diez mejores del mundo (actual 8°), el danés ya sabe lo que es ganarles a los dos mejores del planeta: Novak Djokovic y Carlos Alcaraz.
+								Para alcanzar las nuevas metas, entre las que se encuentra pelear por la cima del ranking ATP, el jugador de 20 años incorporó una pieza clave a su equipo de trabajo: se trata de Severin Luthi, el histórico entrenador de Roger Federer.
+								"Muy feliz de darle la bienvenida a Severin a mi equipo con Boris (Becker)", publicó Rune en sus redes sociales oficiales para comunicar la nueva alianza.
+								Luthi permaneció junto con Federer durante nada menos que 15 años: llegó a su equipo en la temporada 2007 y se quedó a su lado hasta su retiro en 2022. Además fue el capitán del equipo suizo que ganó su única Copa Davis, con Federer en el plantel, en la edición de 2014.
+								Desde hace dos meses Rune también contaba con otro hombre fuerte en su equipo de trabajo: el alemán Boris Becker, ex número uno del mundo y seis veces campeón de Grand Slam.
+								Becker, una leyenda del tenis internacional, también fue coach de Djokovic entre 2014 y 2016, por lo que Rune ahora tiene en su equipo dos porciones relevantes de historia: un ex coach de Federer y un ex coach del serbio.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-2">FRANCISCO CERÚNDOLO</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 3.jpg') }}" alt="">
+							<p class="texto">
+								FRANCISCO CERÚNDOLO: "DAVIN ES EL PLUS QUE NECESITABA PARA ESTE AÑO"
+								El número uno del tenis argentino profundizó respecto de la incorporación del ex entrenador de Del Potro a su equipo. "La meta es llegar al top 10", sostuvo.
+								FRANCISCO CERÚNDOLO atraviesa, sin espacio para dudas, el mejor momento de su carrera. Instalado como el tenista número uno de la Argentina, hoy es el 21° del mundo y hasta llegó a ubicarse en el puesto 19.
+								Su próximo objetivo es ambicioso pero, a juzgar por el presente, no deja de aparecer como realista: Cerúndolo quiere meterse en el top 10 del ranking ATP.
+								"Todavía no me planteé los objetivos del año pero el más grande que tengo es ser top 10. Para eso necesito que me vaya bien en los torneos más importantes, en los Grand Slams y en los Masters 1000. Creo que todo va a ir de la mano", explicó el mejor tenista argentino del momento en diálogo con El Gráfico.
+								Con la meta entre ceja y ceja dio el primer gran paso con vistas a 2024: sumó a Franco Davin, el ex entrenador de Juan Martín Del Potro y de Gastón Gaudio, entre otros, como pieza clave de su equipo de trabajo.
+								"Davin es una ayuda más a todo lo que tenemos, un aporte de mucha experiencia y de jerarquía. Me va a ayudar a mí, me va a dar enseñanzas, aprendizajes, pero no sólo a mí: es para todo mi equipo. Va en busca de hacer una mejoría grupal. Es el plus que quizá necesitamos para este año", explicó Cerúndolo, que cuenta con Kevin Konfederak como coach principal.
+								El acercamiento con el prestigioso entrenador, ganador de dos Grand Slams -Roland Garros 2004 con Gaudio y el US Open 2009 con Del Potro-, surgió por una charla con el propio Kofederak: "Yo ya lo tenía en mente y Kevin me planteó si a mí me interesaba sumar a alguien más para que pudiera aportarnos un plus. Yo se lo iba a decir pero quería esperar que terminara el año. Nos pusimos analizar el mercado y yo quería que fuera un argentino por afinidad y contacto entre nosotros. Entre los argentinos buscar alguien de peso no estaba complicado pero sí había pocas ofertas: Franco se sumó porque le interesó la propuesta".
+								En torno a su crecimiento y con vistas al año que viene Cerúndolo expresó: "Todos estos últimos años para mí representaron un ascenso. Siempre mejoramos. Ahora los detalles son muy sutiles. Franco es el entrenador más exitoso de la Argentina: tiene dos Grand Slams encima y entrenó a jugadores de muchísima jerarquía. Nos va a aportar mucho en el sentido de cómo manejarnos en los torneos, el armado de calendarios, y todas las sugerencias que pueda darnos".
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-3">ARGENTINA OPEN</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 4.jpg') }}" alt="">
+							<p class="texto">
+							    CARLOS ALCARAZ, LA PRINCIPAL ATRACCIÓN DE UN TORNEO CON HISTORIA
+								La edición 2024 contará además con un histórico como Stan Wawrinka y Francisco Cerúndolo, el mejor argentino de la actualidad y 21º en el ranking ATP.
+								CARLOS ALCARAZ, NÚMERO 2 DEL MUNDO, será la gran atracción del Argentina Open que se realizará del 10 al 18 de febrero en el Buenos Aires Lawn Tennis Club. El torneo contará además con figuras de la talla de Stan Wawrinka y Francisco Cerúndolo, 21º en el ranking ATP y el mejor argentino de la actualidad.
+								Se sumarán también el francés de 19 años Arthur Fils, número 36 del mundo y una de las 
+								grandes promesas del circuito, y el británico Cameron Norrie, 18º en el escalafón, que en la edición de 2023 perdió la final ante Alcaraz.
+								"Me atrevo a decir que es de las ediciones más prometedoras tenísticamente. El cuadro principal es un verdadero lujo", expresó Martín Jaite, director del torneo, que también confirmó que Facundo Diaz Acosta, ya top 100 ATP,  yDiego Schwartzman, son los dos primeros invitados a disputar el certamen. 
+								En la presentación estuvo Cerúndolo, quien reconoció que "de chico tengo muchos recuerdos de venir a ver el torneo con mi papá, así que es muy especial para mí jugarlo. Siempre trato de hacerlo de la mejor manera y poder tener a mi gente en la tribuna me da un plus".
+								Entre las novedades para disfrutar más y mejor de este ATP 250 resalta la adición de una tribuna tubular con 800 lugares nuevos para los espectadores.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-4">FRANCISCO CERÚNDOLO VA POR TODO</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 5.jpg') }}" alt="">
+							<p class="texto">
+								QUIERO METERME EN EL TOP 10
+								El número uno del tenis argentino contó que su objetivo principal será meterse entre los diez mejores del ranking ATP.
+								FRANCISCO CERÚNDOLO, el actual número uno del tenis argentino, se mostró feliz por el desempeño que tuvo este año, al que consideró "el mejor de su carrera" y se trazó como "un objetivo principal y más difícil, meterse dentro del top 10" en 2024.
+								"Este fue mi mejor año tenístico, pero igualmente el próximo me gustaría seguir creciendo, un objetivo principal y más difícil sería meterme entre los 10 mejores del mundo", comentó Cerúndolo, de 25 años.
+								El actual 21° del ranking mundial de la ATP conquistó este año su segundo título ATP cuando se alzó con el trofeo en Eastbourne, Inglaterra, para apoderarse de un título sobre césped, algo que un tenista argentino había logrado por última vez hace 28 años.
+								"El año que viene me gustaría seguir creciendo, estoy 20 del mundo y vengo haciéndolo año tras año. Sé que es muy difícil avanzar todos los años porque ya son muy reducidas las posiciones en el ranking, pero estar entre los 10 mejores es lo más desafiante que voy a tener para 2024",subrayó, en diálogo con Télam, quien también había conquistado el torneo de Bastad en 2022.
+								La evolución de Cerúndolo fue reconocida la semana pasada cuando recibió el premio Jorge Newbery de Oro al deportistas argentino más destacado de 2023 y además, logró la estatuilla de plata por ser el tenista del país que mejor se desempeñó este año según la Asociación Argentina de Tenis, superando a Sebastián Báez, Facundo Díaz Acosta y a la pergaminense Julia Riera,
+								"Para el próximo año me pondré nuevos objetivos, más desafíos, quiero mejorar mi juego para seguir creciendo", añadió Fran, hermano mayor de Juan Manuel Cerúndolo, ubicado en el puesto 120 del ranking mundial de la ATP.
+								"Este fue mi mejor año tenístico hasta ahora, porque 2022 también fue tremendo para mi, pero éste fue superior a todos. Fue muy desafiante pero estoy muy contento con todo lo que logré", sobre su victoria en el césped de Eastbourne.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-5">DJOKOVIC</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 6.jpg') }}" alt="">
+							<p class="texto">
+								EL VILLANO SIN VACUNAS PERO CON TÍTULOS QUE ADVIRTIÓ: "DESPERTARON A LA BESTIA"
+								El tenista número 1 del mundo recordó su deportación de Australia por no querer aplicarse la dosis contra el covid y le dejó un mensaje a sus competidores.
+								NOVAK DJOKOVIC experimentó un 2023 que se convirtió en histórico para él: volvió a terminar como número 1 por octava vez en su carrera y se convirtió en el primer jugador en lograr estar 400 semanas en la cima de la clasificación.
+								Como si fuera poco, se impuso en el ATP Finals de Turín y en 3 de los 4 Grand Slams: Roland Garros, US Open y el Abierto de Australia. En este último, justamente, sufrió una situación que conmocionó al mundo y no sólo al del deporte, en enero de 2022, cuando fue deportadodel país por negarse a recibir la vacuna por el covid, durante la pandemia.
+								Tal situación fue recordada por el serbio en una entrevista que brindó al programa estadounidense 60 Minutos: "Fui declarado como el villano del mundo. Básicamente, fue el mundo contra mí", no dudó en afirmar.   
+								Si bien había experimentado el hecho de que no lo alentaran durante un partido, a partir de ese hecho hubo un antes y un después en la relación con el público: "Nunca antes en mi vida había tenido esta experiencia en particular", reconoció. Y esa sensación se replicó en los siguientes torneos del circuito tras la deportación.
+								"La gente me declaró como anti vacuna; tampoco soy pro vacuna: soy pro a la libertad de elegir", explicó. Pero aquello ya quedó atrás y ahora, en el último tramo de su carrera, tiene motivaciones para seguir siendo el mejor.
+								En efecto Nole reconoció que "mi motivación adicional está en esos jóvenes que tienen hambre de éxito y están inspirados para jugar lo mejor que puedan contra mí. En cierto modo, ellos despertaron la bestia que hay en mí". 
+								Y le puso nombre propio a esa amenaza deportiva: "Carlos Alcaraz es el jugador más completo que he visto en mucho tiempo, perder en Wimbledon me molestó tanto que luego tuve que ganarlo todo en América", manifestó entre risas, y subrayó que "esta rivalidad es una gran oportunidad para esforzarme más que nunca". 
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-6">GRAND SLAM</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 7.jpg') }}" alt="">
+							<p class="texto">
+								BOMBAZO EN EL TENIS: RAFAEL NADAL SE ANOTÓ PARA EL ABIERTO DE AUSTRALIA
+								El español volverá a disputar un Grand Slam luego de un año de ausencia.
+								RAFAEL NADAL es sin duda uno de los mejores tenistas de la historia. Su gran talento lo puso en la cima del deporte por más de quince años consecutivos, compitiendo palmo a palmo con Roger Federer y Novak Djokovic.
+								Sin embargo, su inactividad durante todo 2023 lo llevó a caer al 664to. puesto del ranking ATP. Tras anunciar su vuelta para enero de 2024 en el ATP de Brisbane, la leyenda dio otra revelación que sorpendió a más de un fanático.
+								Es que también disputará el Abierto de Australia, programado para disputarse entre el 14 y 28 de enero, donde tratará de hacerle frente al serbio Djokovic, diez veces campeón y casi infalible en piso oceánico.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-7">COPA DAVIS</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 8.jpg') }}" alt="">
+							<p class="texto">
+								AGUSTÍN CALLERI SERÁ PARTE DEL COMITÉ DE LA COPA DAVIS
+								La ITF anunció los distintos grupos de trabajo para el ciclo 2024/2025.
+								AGUSTÍN CALLERI, presidente de la Asociación Argentina de Tenis, fue anunciado este jueves por la ITF (Federación Internacional de Tenis) como uno de los 14 miembros del Comité de la Copa Davis para el ciclo 2024/2025.
+								Más de 230 representantes de 68 países han sido designados para formar parte de una variedad de comités, comisiones y grupos de trabajo que ayudarán a la Federación y su Junta Directiva en áreas clave del deporte. 
+								Los integrantes del comité incluyen representantes de la Junta Directiva de la ITF, miembros de asociaciones nacionales e individuos seleccionados en áreas específicas de especialización, todos los cuales brindan su tiempo de forma voluntaria. En los nombramientos de 2024-2025, el 35% está ocupado por mujeres -cifra récord-, un aumento del 7,4% con respecto al ciclo anterior.
+								Además, se ha nombrado por unanimidad a cuatro vicepresidentes de la ITF para el período 2023-27 tras la reunión en Málaga en noviembre: Bulat Utemuratov (Kazajstán) fue reelegido luego de haberse desempeñado en el cargo durante el mandato 2019-23 y a él se unirán Brian Hainline (EE.UU.), Salma Mouelhi Guizani (Túnez) y Rafael Westrupp (Brasil).También se volvió a nombrar a Mary Pierce y Mark Woodforde como representantes de la Junta de Atletas para el período 2023-27.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-8">CASO PÉREZ ROLDÁN</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 9.jpg') }}" alt="">
+							<p class="texto">
+								REVOCARON MEDIDAS DE VIGILANCIA EN CONTRA DEL PADRE DEL EXTENISTA
+								La Cámara Federal de Casación determinó que Raúl Pérez Roldán, denunciado por su hijo Guillermo por violencia, no será obligado a usar tobillera electrónica ni se le prohibirá salir del país, entre otros métodos establecidos por la justicia federal de Azul.
+								RAÚL PÉREZ ROLDÁN, padre del extenista Guillermo Pérez Roldán y denunciado por violencia tanto por este como por otras víctimas, no será obligado a usar tobillera electrónica ni se le prohibirá salir del país, entre otros métodos de vigilancia, tal como lo había establecido la justicia federal de Azul.
+								La Cámara Federal de Casación confirmó la decisión de revocar tales medidas al rechazar 
+								un recurso que presentaron el exdeportista y su madre y dejó vigente así la decisión de la Cámara Federal de Mar del Plata que revocó métodos para garantizar la vigilancia del acusado.
+								Además de los nombrados, también se disponía la retención de documentos de viaje y la obligación de no ausentarse de su domicilio por más de 72 horas sin permiso previo del juzgado.
+								El Tribunal de Apelaciones de Mar del Plata ponderó que las medidas eran "excesivas ante el prematuro estado de la investigación y la falta de elementos objetivos que pudieran poner en evidencia la voluntad del denunciado de evadir el accionar judicial o entorpecer la investigación".
+								Esta decisión quedó confirmada ahora por Casación, con los votos de la jueza Angela Ledesma y sus colegas Guillermo Yacobucci y Alejandro Slokar.
+								Las víctimas cuentan con dispositivo antipánico y Pérez Roldán tiene prohibido acercarse a su ex esposa, Graciela Pérez; a su hijo Guillermo y al entorno familiar de ambos, que habían solicitado restablecer las medidas de control ante "riesgos procesales" y la gravedad de los delitos como "reducción a la servidumbre, violación, lesiones, administración infiel, trata de personas, lavado de dinero, entre otros", en perjuicio de victimas que eran menores de edad al momento de los hechos.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-9">WTA</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 10.jpg') }}" alt="">
+							<p class="texto">
+								JULIA RIERA Y LOURDES CARLÉ, CAMPEONAS DEL MONTEVIDEO OPEN
+								Las tenistas argentinas conquistaron el WTA 125 en dobles y lograron un importante hito para el tenis femenino nacional.
+								EL TENIS ARGENTINO termina una temporada con grandes alegrías.Esta vez, el festejo llegó del lado femenino a través de la dupla de Lourdes Carlé y Julia Riera.
+								Juntas se consagraron campeonas del doble en el WTA 125 de Montevideo, tras vencer en la final a Freya Christie y Yuliana Lizarazo (Gran Bretaña/Colombia) por 7-6 y 7-5.
+								Es el primer trofeo de esta categoría para Riera, de 21 años, mientras que para Carlé, de 23, es el segundo consecutivo luego del obtenido en el Argentina Open en la semana anterior.
+								Ambas no sólo ganaron el certamen sino que representa un logro importante para el tenis argentino femenino: es el título más grande de una dupla cien por ciento argentina en 20 años. La última vez lo habían conseguido María Emilia Salerni y Gisela Dulko, en 2003, cuando fueron campeonas del WTA 250 de Casablanca.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-10">ARGENTINA OPEN</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 11.jpg') }}" alt="">
+							<p class="texto">
+								LOURDES CARLÉ ES FINALISTA DEL ARGENTINA OPEN
+								En el duelo de compatriotas por las semifinales superó a Julia Riera por 2-6, 6-3 y 6-1.
+								LOURDES CARLÉ venció a su compatriota Julia Riera en semifinales y este domingo disputará la final del Argentina Open en el Tenis Club Argentino.
+								Carlé, nacida en la ciudad bonaerense de Daireaux hace 23 años, tuvo un sábado perfecto y lo coronó con su triunfo ante Riera por 2-6, 6-3 y 6-1, en una hora y 57 minutos de juego.
+								Más temprano, la 175 del ranking mundial de la WTA había dejado en el camino a la francesa Diane Parry (77), primera preclasificada y máxima favorita al título, en un partido correspondiente a los cuartos de final, que no pudieron disputarse ayer porque la lluvia obligó a suspender la jornada. Carlé se impuso por 7-6 (2) y 6-3.
+								Riera, en tanto, venía de superar a la eslovena Polona Hercog (292) por 6-3 y 6-4 luego de una hora y media de juego.
+								Por el otro lado del cuadro, la marplatense Solana Sierra (209) cayó en cuartos de final ante la brasileña Laura Pigossi (137), por 2-6, 7-5 y 6-3, en dos horas y 19 minutos de juego.
+								Tras superar a la argentina, Pigossi venció por 6-4 1-6 7-6 (2) en semifinales a la mexicana Renata Zarazúa (135) y obtuvo un lugar en la final.
+								El WTA 125 de Argentina se juega en polvo de ladrillo y reparte un total de 115.000 dólares.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-11">FINALISTA LOCAL EN EL ARGENTINA OPEN</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 12.jpg') }}" alt="">
+							<p class="texto">
+								LOURDES CARLÉ Y JULIA RIERA GANARON Y ASEGURARON UNA FINALISTA LOCAL EN EL ARGENTINA OPEN
+								Las dos tenistas albicelestes avanzaron a las semifinales del WTA 125 y definirán entre ellas el pase a la instancia decisiva del torneo. Solana Sierra quedó eliminada.
+								Habrá presencia argentina en la final del WTA 125 en Buenos Aires tras los triunfos de Lourdes Carlé y Julia Riera.
+								Carlé, oriunda de Daireaux y 175 del ranking mundial, logró una gran victoria en cuartos de final sobre la francesa Diane Parry (77), máxima favorita al título, por 7-6 (7-2) y 6-3 en dos horas y 18 minutos.
+								Por su lado, con solidez y contundencia, Riera (163), la pergaminense de 21 años, doblegó a la eslovena Polona Hercog (292) por 6-3 y 6-4 luego de una hora y media de juego.
+								Carlé y Riera se enfrentarán en una de las semifinales, lo que garantiza la presencia de una tenista albiceleste en la final del domingo.
+								La contracara de la jornada fue Solana Sierra (209), quien cayó por 6-2 5-7 y 3-6 ante la brasileña Laura Pigossi (137), la campeona Panamericana en Santiago 2023.
+								La marplatense de 19 años empezó con un tenis de alto vuelo, pero luego se vio superada por la experiencia de si rival y no pudo aprovechar la chance de meterse entre las cuatro mejores.
+							</p>
+					</div>
+				</div>
+				<div class="contenedor-0">
+					<h5 class="h5-12">TENIS FEMENINO</h5>
+					<div class="contenedor1">
+						<img class="img1" src="{{ url_for('static', filename='imagenes/Tenis foto 13.jpg') }}" alt="">
+							<p class="texto">
+								MERCEDES PAZ Y EL ENTUSIASMO POR LA PROYECCIÓN DEL TENIS FEMENINO
+								Ratificada como capitana del Equipo Nacional, manifestó su esperanza en dar un gran salto en 2024.
+								MERCEDES PAZ fue ratificada por la Asociación Argentina de Tenis como capitana del Equipo Femenino y expresó su felicidad por dicha decisión: "Es algo muy lindo porque 2024 va a ser importantísimo", sostuvo.
+								Al hacer un balance de su trabajo, consideró que "empezamos calladas, de a poco, y hoy el tenis femenino argentino es un producto importante". Subrayó que haya 5 jugadoras entre los primeros 200 puestos del escalafón, algo que "hace tiempo que no pasaba, además de 34 ranqueadas, varias con menos de 20 años y tres con menos de 15".
+								"Además de los nombres propios como Nadia Podoroska, Lourdes Carlés, Julia Riera, Martina Caputo o Solana Sierra, detrás hay muchas más y eso es súper bueno", destacó en diálogo con TyC Sports.
+								Para la temporada que se aproxima, la tucumana explicó que "somos candidatas a ascender en la zona americana de la Billie Jean King Cup y tenemos un gran equipo para poder hacerlo. Además vienen los Juegos Olímpicos en los que Podoroska ya está adentro por ranking, Lourdes Carlés casí está también y tengo el pálpito de que vamos a ir con dos jugadoras más. Estas tres semanas que faltan van a ser fundamentales para esas dos plazas".
+							</p>
+					</div>
+				</div>
+			</div>
+			<h2 id="seccion2" class="titulo">TENIS RANKINGS</h2>
+			<h4 class="titulo-1">TEMPORADA 2023</h4>
+			</div>
+			<div class="tabla">
+				<div class="tabla-1">
+					<h4 class="titulo-1">ATP</h4>
+					<table>
+						<thead>
+							<tr>
+								<th>Pos</th>
+								<th>Jugador</th>
+								<th>Puntos</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera Servia.webp') }}" alt=""> N. Djokovic</td>
+								<td>11245</td>		
+							</tr>
+							<tr>
+								<td>2</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera España.webp') }}" alt=""> C. Alcaraz</td>
+								<td>8855</td>			
+							</tr>
+							<tr>
+								<td>3</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Rusia.webp') }}" alt=""> D. Medvedev</td>
+								<td>7600</td>			
+							</tr>
+							<tr>
+								<td>4</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Italia.webp') }}" alt=""> J. Sinner</td>
+								<td>6490</td>			
+							</tr>
+							<tr>
+								<td>5</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Rusia.webp') }}" alt=""> A. Rublev</td>
+								<td>4805</td>			
+							</tr>
+							<tr>
+								<td>6</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Grecia.webp') }}" alt=""> S. Tsitsipas</td>
+								<td>4235</td>			
+							</tr>
+							<tr>
+								<td>7</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Alemania.webp') }}" alt=""> A. Zverev</td>
+								<td>3985</td>			
+							</tr>
+							<tr>
+								<td>8</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Dinamarca.webp') }}" alt=""> H. Rune</td>
+								<td>3660</td>			
+							</tr>
+							<tr>
+								<td>9</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Polonia.webp') }}" alt=""> H. Hurkacz</td>
+								<td>3245</td>			
+							</tr>
+							<tr>
+								<td>10</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de EEUU.webp') }}" alt=""> T. Fritz</td>
+								<td>3100</td>			
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="tabla-1">
+					<h4 class="titulo-1">WTA</h4> 
+					<table>
+						<thead>
+							<tr>
+								<th>Pos</th>
+								<th>Jugadora</th>
+								<th>Puntos</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Polonia.webp') }}" alt=""> I. Swiatek</td>
+								<td>9295</td>			
+							</tr>
+							<tr>
+								<td>2</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Bielorrusia.webp') }}" alt=""> A. Sabalenka</td>
+								<td>9050</td>			
+							</tr>
+							<tr>
+								<td>3</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de EEUU.webp') }}" alt=""> C. Gauff</td>
+								<td>6580</td>			
+							</tr>
+							<tr>
+								<td>4</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera Kazajistan.webp') }}" alt=""> E. Rybakina</td>
+								<td>6365</td>			
+							</tr>
+							<tr>
+								<td>5</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de EEUU.webp') }}" alt=""> J. Pegula</td>
+								<td>5975</td>			
+							</tr>
+							<tr>
+								<td>6</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Tunez.webp') }}" alt=""> O. Jabeur</td>
+								<td>4195</td>			
+							</tr>
+							<tr>
+								<td>7</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera Republica Checa.webp') }}" alt=""> M. Vondrousova</td>
+								<td>4046</td>			
+							</tr>
+							<tr>
+								<td>8</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera Republica Checa.webp') }}" alt=""> K. Muchova</td>
+								<td>3650</td>			
+							</tr>
+							<tr>
+								<td>9</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera de Grecia.webp') }}" alt=""> M. Sakkari</td>
+								<td>3620</td>			
+							</tr>
+							<tr>
+								<td>10</td>
+								<td><img src="{{ url_for('static', filename='imagenes/Bandera Republica Checa.webp') }}" alt=""> B. Krejcikova</td>
+								<td>2880</td>			
+							</tr>
+						</tbody>
+					</table>
+			    </div>
+			</div>
+	    </main>
+		<div class="div1">
+			<button><a href="">IR ARRIBA</a></button>
+		</div>	
+        <footer>
+            <p>DERECHOS RESERVADOS</p>
+            <p>TRABAJO PRÁCTICO EXAMEN FINAL</p>
+            <p>MARCELO ALLEGRINI</p>
+            <div class="div1">
+                <button><a href="{{ url_for('login') }}">LOGIN</a></button>
+                <button><a href="{{ url_for('registro') }}">REGISTRARSE</a></button>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    
+</body>
+</html>

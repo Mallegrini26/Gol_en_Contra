@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>COPA AMÉRICA</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/copa_america.css') }}"
+        />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="imagenes/x-icon"
+            href="{{ url_for('static', filename='imagenes/pelota de futbol.jpg') }}"
+        />
+    </head>
+    <body>
+        <header>
+            <img
+                class="img-logo"
+                src="{{ url_for('static',filename='imagenes/Logo Copa America 2024.jpg') }}"
+                alt=""
+            />
+            <h1>COPA AMÉRICA 2024</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">INICIO</a></li>
+                <li><a href="#seccion1">ESTADIOS</a></li>
+                <li><a href="#seccion2">GRUPOS</a></li>
+                <li><a href="#seccion3">CALENDARIO DE PARTIDOS</a></li>
+            </ul>
+        </nav>
+        <h2 class="titulo">
+            COPA AMÉRICA 2024: CONMEBOL PRESENTÓ LA IMAGEN Y EL LOGO
+        </h2>
+        <!--MAIN-->
+        <main>
+            <div class="contenedor">
+                <div class="contenedor1">
+                    <img
+                        class="img-logo-1"
+                        src="{{ url_for('static',filename='imagenes/Logo Copa America 2024-1.jpg') }}"
+                        alt=""
+                    />
+                    <p class="texto">
+                        La edición número 48, que se disputará el año que viene,
+                        está inspirada en los símbolos de Estados Unidos, sede
+                        de la competencia. CONMEBOL dio a conocer la imagen y el
+                        logotipo de la nueva edición de la Copa America 2024. En
+                        su edición número 48, la Copa America reflejará la
+                        pasión del fútbol del continente, los valores y las
+                        características de la competencia, así como también la
+                        conectividad que genera el certamen entre distintas
+                        naciones de todo el mundo. Con una identidad de marca
+                        vibrante, la imagen de la CONMEBOL Copa America 2024
+                        está inspirada en los símbolos que presentan a Estados
+                        Unidos. De allí, el uso de colores como el azul, el rojo
+                        y el blanco, y de elementos como las estrellas
+                        características de la bandera de este país, que, para
+                        esta ocasión también simbolizan el cielo y a los máximos
+                        exponentes de este deporte.
+                    </p>
+                </div>
+                <div class="contenedor1">
+                    <h2 class="titulo">INFORMACION DEL LOGO</h2>
+                    <br />
+                    <img
+                        class="img-logo-2"
+                        src="{{ url_for('static',filename='imagenes/Logo Copa America 2024-2.jpg') }}"
+                        alt=""
+                    />
+                    <p class="texto">
+                        El nuevo logotipo pone en el centro el trofeo de la
+                        competencia a los aficionados que alientan en cada
+                        partido a sus selecciones, y a los mejores jugadores del
+                        mundo. <br />
+                        <b>ASÍ SE JUGARÁ LA COPA AMÉRICA 2024</b><br />
+                        La Copa America 2024 se jugará en Estados Unidos e
+                        incluirá a las 10 selecciones de CONMEBOL y 6 equipos de
+                        Concacaf, en calidad de invitados. Este tradicional
+                        torneo será coorganizado por ambas confederaciones. Los
+                        seis equipos de Concacaf se clasificarán a través de la
+                        Liga de Naciones Concacaf 2023/24. La fase de grupos y
+                        cuartos de final de la tercera edición de la competencia
+                        se jugarán durante las Fechas FIFA de Septiembre,
+                        Octubre y Noviembre 2023. Esta será la edición número 48
+                        de una de las competencias más importante del
+                        continente, que contará por segunda vez en su historia
+                        con 16 participantes, misma cantidad que en la edición
+                        del 2016, también realizada en Estados Unidos. En el
+                        campo estarán reunidos diez títulos sudamericanos de la
+                        Copa Mundial de la FIFA y las mayores estrellas del
+                        fútbol mundial para jugar los 32 partidos de esta
+                        edición, en junio y julio del 2024.
+                    </p>
+                </div>
+            </div>
+            <h2 id="seccion1" class="titulo">
+                ESTADIOS DE LA COPA AMÉRICA 2024
+            </h2>
+            <div class="contenedor2">
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Allegiant Stadium.webp') }}"
+                        alt=""
+                        title="Allegiant Stadium, Las Vegas, Nevada"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio AT&T  Stadium.webp') }}"
+                        alt=""
+                        title="AT&T Stadium, Arlington, Texas"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Bank of America Stadium.webp') }}"
+                        alt=""
+                        title="Bank of America Stadium, Charlotte, North Carolina"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Children´s Mercy Park Stadium.webp') }}"
+                        alt=""
+                        title="Children’s Mercy Park, Kansas City, Kansas"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Exploria Stadium.webp') }}"
+                        alt=""
+                        title="Exploria Stadium, Orlando, Florida"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio GEHA Field at Arrowhead Stadium.webp') }}"
+                        alt=""
+                        title="GEHA Field at Arrowhead Stadium, Kansas City, Missouri"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Hard Rock Stadium.webp') }}"
+                        alt=""
+                        title="Hard Rock Stadium, Miami Gardens, Florida"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Levi Stadium Stadium.webp') }}"
+                        alt=""
+                        title="Levi’s Stadium, Santa Clara, California"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Mercedes Benz  Stadium.webp') }}"
+                        alt=""
+                        title="Mercedes-Benz Stadium, Atlanta, Georgia"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Met Life Stadium.webp') }}"
+                        alt=""
+                        title="MetLife Stadium, East Rutherford, New Jersey"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Nrg Stadium.webp') }}"
+                        alt=""
+                        title="NRG Stadium, Houston, Texas"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio Q2 Stadium.webp') }}"
+                        alt=""
+                        title="Q2 Stadium, Austin, Texas"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio SoFi Stadium.webp') }}"
+                        alt=""
+                        title="SoFi Stadium, Inglewood, California"
+                    />
+                </div>
+                <div class="contenedor3">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Copa America Estadio State Farm Stadium.webp') }}"
+                        alt=""
+                        title="State Farm Stadium, Glendale, Arizona"
+                    />
+                </div>
+            </div>
+            <h2 class="titulo">
+                ¿ TE GUSTARÍA HACER NUESTRA TRIVIA DE LA COPA AMÉRICA ?
+            </h2>
+            <!--COLLAPSE-->
+            <div class="colapso">
+                <p class="d-inline-flex gap-1">
+                    <a
+                        class="btn btn-primary"
+                        data-bs-toggle="collapse"
+                        href="#collapseExample"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                    >
+                        TOCA EL BOTÓN PARA HACER LA TRIVIA
+                    </a>
+                    <button
+                        class="btn btn-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                    >
+                        TOCA EL BOTÓN PARA CERRAR LA TRIVIA
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <h2 class="titulo">PREGUNTAS</h2>
+                        <form id="myform" class="form1">
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 1¿ Qué país ganó la última Copa
+                                    América ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p1"
+                                            value="a"
+                                        />
+                                        ARGENTINA
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p1"
+                                            value="b"
+                                        />
+                                        BRASIL
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p1"
+                                            value="c"
+                                        />
+                                        URUGUAY
+                                    </li>
+                                </ol>
+                                <p id="p1" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 2 ¿ En qué año se jugó la Copa América
+                                    por primera vez ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p2"
+                                            value="a"
+                                        />
+                                        1917
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p2"
+                                            value="b"
+                                        />
+                                        1916
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p2"
+                                            value="c"
+                                        />
+                                        1918
+                                    </li>
+                                </ol>
+                                <p id="p2" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 3 ¿ Cuántos equípos disputarán la Copa
+                                    América 2024 ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p3"
+                                            value="a"
+                                        />
+                                        16
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p3"
+                                            value="b"
+                                        />
+                                        12
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p3"
+                                            value="c"
+                                        />
+                                        10
+                                    </li>
+                                </ol>
+                                <p id="p3" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 4 ¿ Cuántos grupos habra en la Copa
+                                    América 2024 ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p4"
+                                            value="a"
+                                        />
+                                        4
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p4"
+                                            value="b"
+                                        />
+                                        3
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p4"
+                                            value="c"
+                                        />
+                                        2
+                                    </li>
+                                </ol>
+                                <p id="p4" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 5 ¿ Donde se jugó la última Copa
+                                    América ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p5"
+                                            value="a"
+                                        />
+                                        COLOMBIA
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p5"
+                                            value="b"
+                                        />
+                                        URUGUAY
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p5"
+                                            value="c"
+                                        />
+                                        BRASIL
+                                    </li>
+                                </ol>
+                                <p id="p5" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 6 ¿ Cuántos goles metió Messi en la
+                                    última Copa América ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p6"
+                                            value="a"
+                                        />
+                                        5
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p6"
+                                            value="b"
+                                        />
+                                        4
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p6"
+                                            value="c"
+                                        />
+                                        6
+                                    </li>
+                                </ol>
+                                <p id="p6" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 7 ¿ Quién hizo el gol en la final de
+                                    la Copa América 2021 ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p7"
+                                            value="a"
+                                        />
+                                        MESSI
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p7"
+                                            value="b"
+                                        />
+                                        DI MARÍA
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p7"
+                                            value="c"
+                                        />
+                                        LAUTARO MARTÍNEZ
+                                    </li>
+                                </ol>
+                                <p id="p7" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 8 ¿ Donde se jugó la última Copa
+                                    América ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p8"
+                                            value="a"
+                                        />
+                                        BRASIL
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p8"
+                                            value="b"
+                                        />
+                                        COLOMBIA
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p8"
+                                            value="c"
+                                        />
+                                        CHILE
+                                    </li>
+                                </ol>
+                                <p id="p8" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 9 ¿ Cuantas Copas Américas tiene
+                                    Argentina ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p9"
+                                            value="a"
+                                        />
+                                        14
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p9"
+                                            value="b"
+                                        />
+                                        15
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p9"
+                                            value="c"
+                                        />
+                                        13
+                                    </li>
+                                </ol>
+                                <p id="p9" class="texto-1"></p>
+                            </div>
+                            <div class="div-trivia">
+                                <p>
+                                    Nro - 10 ¿ En que Estadio se juega la final
+                                    de la Copa América 2024 ?
+                                </p>
+                                <ol type="A">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p10"
+                                            value="a"
+                                        />
+                                        EXPLORIA STADIUM
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p10"
+                                            value="b"
+                                        />
+                                        MERCEDES BENZ STADIUM
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            name="p10"
+                                            value="c"
+                                        />
+                                        HARD ROCK STADIUM
+                                    </li>
+                                </ol>
+                                <p id="p10" class="texto-1"></p>
+                            </div>
+                        </form>
+                        <div class="divboton-trivia">
+                            <div class="divboton-trivia1">
+                                <button
+                                    class="boton-trivia1"
+                                    type="button"
+                                    onclick="Submitform()"
+                                >
+                                    ENVIAR
+                                </button>
+                            </div>
+                        </div>
+                        <p id="result" class="texto-1"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <button><a href="">IR ARRIBA</a></button>
+            </div>
+            <h2 id="seccion2" class="titulo">
+                EQUIPOS CLASIFICADOS PARA LA COPA AMÉRICA 2024
+            </h2>
+            <div class="grupos">
+                <div class="grupos-1">
+                    <h4 class="titulo-grupos">GRUPO A</h4>
+                    <ul>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Argentina.webp') }}" alt="" />
+                            Argentina
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Peru .webp') }}" alt="" />
+                            Perú
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Chile .webp') }}" alt="" />
+                            Chile
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Canada .webp') }}" alt="" />
+                            Canadá/
+                            <img
+                                src="{{ url_for('static',filename='imagenes/Bandera Trinidad y Tobago.webp') }}"
+                                alt=""
+                            />
+                            Trinidad y Tobago
+                        </li>
+                    </ul>
+                </div>
+                <div class="grupos-1">
+                    <h4 class="titulo-grupos">GRUPO B</h4>
+                    <ul>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera de México.webp') }}" alt="" />
+                            México
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Ecuador .webp') }}" alt="" />
+                            Ecuador
+                        </li>
+                        <li>
+                            <img
+                                src="{{ url_for('static',filename='imagenes/Bandera Venezuela .webp') }}"
+                                alt=""
+                            />Venezuela
+                        </li>
+                        <li>
+                            <img
+                                src="{{ url_for('static',filename='imagenes/Bandera Costa Rica .webp') }}"
+                                alt=""
+                            />
+                            Costa Rica/
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Honduras .webp') }}" alt="" />
+                            Honduras
+                        </li>
+                    </ul>
+                </div>
+                <div class="grupos-1">
+                    <h4 class="titulo-grupos">GRUPO C</h4>
+                    <ul>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}" alt="" />
+                            Estados Unidos
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Uruguay .webp') }}" alt="" />
+                            Uruguay
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera de Panama.webp') }}" alt="" />
+                            Panamá
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Bolivia .webp') }}" alt="" />
+                            Bolivia
+                        </li>
+                    </ul>
+                </div>
+                <div class="grupos-1">
+                    <h4 class="titulo-grupos">GRUPO D</h4>
+                    <ul>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Brazil.webp') }}" alt="" />
+                            Brasil
+                        </li>
+                        <li>
+                            <img
+                                src="{{ url_for('static',filename='imagenes/Bandera de Colombia.webp') }}"
+                                alt=""
+                            />
+                            Colombia
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Paraguay .webp') }}" alt="" />
+                            Paraguay
+                        </li>
+                        <li>
+                            <img src="{{ url_for('static',filename='imagenes/Bandera Jamaica .webp') }}" alt="" />
+                            Jamaica
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2 id="seccion3" class="titulo">CALENDARIO DE PARTIDOS</h2>
+            <img
+                class="calendario"
+                src="{{ url_for('static',filename='imagenes/Calendario de Partidos Copa America.jpg') }}"
+                alt=""
+            />
+        </main>
+        <div class="boton">
+            <button><a href="">IR ARRIBA</a></button>
+        </div>
+        <footer>
+            <p>DERECHOS RESERVADOS</p>
+            <p>TRABAJO PRÁCTICO EXAMEN FINAL</p>
+            <p>MARCELO ALLEGRINI</p>
+            <div class="boton">
+                <button><a href="{{ url_for('login') }}">LOGIN</a></button>
+                <button><a href="{{ url_for('registro') }}">REGISTRARSE</a></button>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="static/nova/java.js"></script>
+    </body>
+    </body>
+</html>

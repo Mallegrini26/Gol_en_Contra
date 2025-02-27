@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FÚTBOL</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/futbol.css') }}"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="imagenes/x-icon"
+            href="{{ url_for('static', filename='imagenes/pelota de futbol.jpg') }}"
+        />
+    </head>
+    <body>
+        <!--HEADER-->
+        <header>
+            <img
+                class="img-logo"
+                src="{{ url_for('static', filename='imagenes/foto imagen de pelota de futbol.png') }}"
+                alt=""
+            />
+            <h1>FÚTBOL</h1>
+            <img
+                class="img-logo"
+                src="{{ url_for('static', filename='imagenes/foto imagen de pelota de futbol.png') }}"
+                alt=""
+            />
+        </header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">INICIO</a></li>
+                <li><a href="#seccion1">FÚTBOL ARGENTINO</a></li>
+                <li><a href="#seccion2">TABLAS DE POSICIONES</a></li>
+                <li><a href="#seccion3">COPA LIBERTADORES</a></li>
+                <li><a href="#seccion4">COPA SUDAMERICANA</a></li>
+                <li>
+                    <a href="{{ url_for('futbol_ascenso') }}"
+                        >FÚTBOL DE ASCENSO</a
+                    >
+                </li>
+                <li>
+                    <a href="{{ url_for('futbol_internacional') }}"
+                        >FÚTBOL INTERNACIONAL</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <h2 id="seccion1" class="titulo">NOTICIAS DEL FÚTBOL ARGENTINO</h2>
+        <!--MAIN-->
+        <main>
+            <div class="contenedor">
+                <div class="contenedor-0">
+                    <h5 class="h5-1">RIQUELME PRESIDENTE DE BOCA</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Foto Juan Roman Riquelme.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Tras ser el más votado en las elecciones de Boca,
+                            Juan Román Riquelme asumirá este lunes 18 de
+                            diciembre como nuevo presidente del Xeneize. El
+                            domingo 17 de diciembre pasado, se rompió un récord
+                            del fútbol argentino en las elecciones de Boca
+                            Juniors. Y es que a los comicios asistieron 46.402
+                            socios a votar, eligiendo la gran mayoría a Juan
+                            Román Riquelme como el nuevo presidente Xeneize. Y
+                            ya como el directivo de más peso ¿qué será lo
+                            primero que hará el ídolo? Tal como había sido
+                            anunciado semanas atrás, ya que las elecciones se
+                            retrasaron, si es que el oficialismo ganaba su
+                            primera acción iba a ser anunciar al nuevo
+                            entrenador de Boca Juniors que reemplazará a Mariano
+                            Herrón, de cara a la temporada 2024. Es así que ese
+                            tema es la prioridad de Juan Román Riquelme, es así
+                            que los hinchas conocerán al nuevo DT en las
+                            próximas horas (no pasaría del martes 19) y todo
+                            hace indicar que el elegido será Diego Martínez, el
+                            ex DT de Huracán, que renunció al Globo precisamente
+                            por un llamado del ídolo Xeneize. Con la
+                            oficialización del entrenador, la directiva se
+                            sentará junto al DT para definir los refuerzos que
+                            llegarán al club, de todas maneras desde antes ya se
+                            venía trabajando en los que podrían llegar. Uno que
+                            pareciera tener un pie y medio en el club, es Éver
+                            Banega, quien se desvinculó con el Al-Shabab de la
+                            liga de Arabia Saudita y ya tenía un acuerdo de
+                            palabra con Román. Otro que podría llegar a Boca
+                            Juniors tras la victoria de Juan Román Riquelme en
+                            las elecciones, es el chileno Arturo Vidal,
+                            futbolista que hace mucho es una obsesión para el
+                            ahora presidente del club y que hasta lo tildó como
+                            jugador para Boca. El experimentado volante finaliza
+                            su contrato con Athletico Paranaense, por lo que
+                            llegaría con el pase en su poder. Pero a diferencia
+                            de Banega, lo de Vidal está en pausa ya que, primero
+                            se espera la confirmación del nuevo DT y lo segundo
+                            es el limitado cupo de extranjeros que le queda a
+                            Boca, ya que solo queda para un futbolista más, por
+                            lo que tanto el entrenador como la directiva,
+                            conversarán y decidirán en qué zona del campo
+                            gastarán ese último cupo. Y ahí aparece el nombre de
+                            Yeferson Soteldo, que descendió con Santos y el
+                            Xeneize ya viene preguntando condiciones, pero la
+                            llegada del venezolano no sería nada fácil porque
+                            hay clubes brasileros atrás de él.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-2">ELECCIONES EN BOCA</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Elecciones en Boca.png') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            La dirigencia del Xeneize fijó la nueva fecha de los
+                            comicios luego de que la Cámara de Apelaciones
+                            revocara la medida cautelar que impedía su
+                            realización.
+                            <b>LA CÁMARA DE APELACIONES</b> revocó la medida
+                            cautelar dictada por la jueza Alejandra Abrevaya,
+                            que había suspendido las elecciones en Boca
+                            estipuladas para el 3 de diciembre pasado, y quedó
+                            oficializado que el domingo próximo se desarrollarán
+                            los comicios con padrón completo. En total, serán
+                            94188 los hinchas habilitados para emitir el
+                            sufragio. Entre los argumentos, el fallo sostiene
+                            que no permitirle votar a los socios significaría
+                            violar sus derechos.Además, marca que según el
+                            estatuto del club es facultad de la Comisión
+                            Directiva el pase de adherentes a activos y que se
+                            cuenta con un año de gracia para presentar cualquier
+                            objeción, período superado con amplitud. Luego de
+                            una denuncia de la oposición por supuestas
+                            irregularidades en el padrón, Abrevaya había
+                            decidido el 28 de noviembre suspender la votación e
+                            investigar la inclusión de 13 mil socios. El
+                            oficialismo apeló la medida y la Cámara le dio la
+                            razón este lunes.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-3">LOS APUNTADOS PARA DIRIGIR A BOCA</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Entrenadores para Boca.png') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Todo indica que de esos dos nombres surgirá el
+                            reemplazante de Jorge Almirón para encarar los
+                            objetivos futbolísticos de 2024. BOCA todavía no
+                            designó al encargado de tomar el timón futbolístico
+                            tras chocar contra ese iceberg llamado Fluminenseen
+                            la final de la Copa Libertadores. La desilusión por
+                            no conseguir la Séptima desembocó en la inmediata
+                            renuncia de Jorge Almirón y la conducción interina
+                            de Mariano Herrón, que tras un breve ciclo ya volvió
+                            a su puesto en la reserva. Antes del 3 de diciembre,
+                            día para el que estaban pactadas las elecciones en
+                            el club, no parecía haber ningún apuro en designar
+                            al nuevo entrenador, más allá de las cartas que
+                            mostraban los candidatos del oficialismo, Juan Román
+                            Riquelme, y el de la oposición, Andrés Ibarra,
+                            acompañado por su postulante a vicepresidente,
+                            Mauricio Macri. Desde su cargo vigente, Román sólo
+                            había dicho que ya tenía al elegido pero que iba a
+                            revelarlo una vez ganados los comicios, si bien
+                            deslizó que el por entonces DT de Huracán, Diego
+                            Martínez, estaba entre los que le agradaban. En la
+                            vereda de enfrente surgió una única posibilidad
+                            encarnada por un pesado nombre de la historia
+                            Xeneize: Martín Palermo, a cargo del plantel de
+                            Platense. Cuando el propio Titán reveló que su
+                            máximo sueño era hacerse cargo del banco boquense,
+                            el Calamar había cerrado una muy buena primera etapa
+                            de la Copa de la Liga pero no imaginaba el presente
+                            que lo instaló en la final del torneo que disputará
+                            el sábado 16 de diciembre en Santiago del Estero
+                            frente a Rosario Central.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-4">DÍA DEL HINCHA DE BOCA</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/El Día del Hincha de Boca.jpg') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Este martes, 12/12, el pueblo Xeneize asistirá al
+                            estadio como ocurre desde hace 11 años y podría
+                            celebrar en medio de la incertidumbre por la
+                            realización de las elecciones. BOCA celebrará este
+                            martes el Día del Hincha, una tradicional
+                            convocatoria de cada 12/12 que desde 2013 se realiza
+                            en la Bombonera, luego de los incidentes que se
+                            produjeron en 2012 cuando la gente se autoconvocó en
+                            el Obelisco. En tal sentido, el departamento de
+                            Socios del club anunció que el ingreso será
+                            "exclusivo sin reserva previa para socios y socias
+                            de todas las categorías, inclusive adherentes", y
+                            que "es requisito presentar carnet y DNI para
+                            realizar el control de acceso". Las puertas del
+                            templo Xeneize se abrirán a las 17 y a partir de las
+                            18 se desarrollará el cronograma de actividades que
+                            aún no trascendieron. Estarán habilitadas las
+                            plateas altas (inclusive el Sector K), plateas
+                            medias y populares altas y medias (Norte y Sur). La
+                            situación dada por la suspensión de las elecciones
+                            hará que el marco sea inusual, con el campo de juego
+                            ocupado por las carpas instaladas para el pospuesto
+                            acto comicial que podría reprogramarse para el
+                            domingo 17 de diciembre o quedar para marzo de 2024.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-5">¿DE DONDE NACE EL NOMBRE LA 12?</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Hinchada de Boca.jpg') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Este martes el Xeneize celebra el Día del Hincha de
+                            Boca. Cuál es el origen del emblemático apelativo
+                            para sus seguidores. BOCA CELEBRA ESTE MARTES 12/12
+                            EL DÍA DEL HINCHA y el apelativo de "La 12" que
+                            ostenta su parcialidaddata del año 1925, con motivo
+                            de la gira que el club emprendió ese año por Europa.
+                            En esa aventura, Victoriano Caffarena, hincha y
+                            socio de la institución, viajó con el plantel, de
+                            ahí que los futbolistas lo apodaron el Jugador N° 12
+                            debido a que estuvo siempre presente en cada lugar
+                            en el que el equipo se presentó a jugar. Caffarena
+                            se pagó todos los gastos, tanto los traslados como
+                            el alojamiento. Durante la gira el Xeneize disputó
+                            19 partidos por España y Alemania. Ganó 15, empató
+                            uno y perdió 3. Anotó 40 goles y recibió 16. El
+                            goleador de la campaña fue Manuel Seoane con 12. La
+                            Chancha llegó desde El Porvenir especialmente para
+                            el periplo por el Viejo Continente.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-6">EVER BANEGAS VUELVE A BOCA</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Ever Banegas.jpg') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            EVER BANEGA rescindió su contrato con Al-Shabab Club
+                            de Arabia Saudita, que culminaba el 30 de junio de
+                            2024, y quedó en condiciones de negociar su regreso
+                            a Boca, que se concretará si Juan Román Riquelme es
+                            elegido presidente del club en las elecciones del
+                            domingo próximo. Banega, nacido en Rosario hace 35
+                            años, tiene todo acordado en lo económico para
+                            regresar a Boca, club en el que comenzó su carrera y
+                            totalizó 44 partidos entre 2006 y 2008, siendo pieza
+                            clave en la última Copa Libertadores que ganó el
+                            Xeneize en 2007. El regreso de Banega está
+                            supeditado a que Riquelme gane las elecciones y sea
+                            elegido presidente, en los comicios del domingo en
+                            los que competirá con la fórmula encabezada por
+                            Andrés Ibarra y Mauricio Macri. Banega, campeón
+                            mundial Sub-20 en Canadá 2007 y medalla dorada en
+                            los Juegos Olímpicos de Beijing 2008, vistió además
+                            las casacas de Valencia, Atlético Madrid y Sevilla,
+                            Inter, y Newell's, club del cual es hincha. En Boca
+                            Banega fue dirigido por Miguel Ángel Russo, quien lo
+                            promovió a primera división.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2 id="seccion3" class="titulo-copas">
+                EQUIPOS CLASIFICADOS PARA LA COPA LIBERTADORES 2024
+            </h2>
+            <div class="copas">
+                <div class="copas-1">
+                    <h4 class="titulo-copas1">ARGENTINA</h4>
+                    <ul>
+                        <li>River (grupos)</li>
+                        <li>Rosario Central (grupos)</li>
+                        <li>Estudiantes (grupos)</li>
+                        <li>Talleres (grupos)</li>
+                        <li>San Lorenzo (grupos)</li>
+                        <li>Godoy Cruz (repechaje)</li>
+                    </ul>
+                    <h4 class="titulo-copas1">BOLIVIA</h4>
+                    <ul>
+                        <li>The Strongest (grupos)</li>
+                        <li>Bolívar (grupos)</li>
+                        <li>Always Ready (repechaje)</li>
+                        <li>Jorge Wilstermann o Aurora (repechaje)</li>
+                    </ul>
+                    <h4 class="titulo-copas1">BRASIL</h4>
+                    <ul>
+                        <li>Fluminense (grupos)</li>
+                        <li>San Pablo (grupos)</li>
+                        <li>Palmeiras (grupos)</li>
+                        <li>Gremio (grupos)</li>
+                        <li>A. Mineiro (grupos)</li>
+                        <li>Flamengo (gruops)</li>
+                        <li>Botafogo (repechaje)</li>
+                        <li>Bragantino (repechaje)</li>
+                    </ul>
+                </div>
+                <div class="copas-1">
+                    <h4 class="titulo-copas1">CHILE</h4>
+                    <ul>
+                        <li>Huachipato (grupos)</li>
+                        <li>Cobresal (grupos)</li>
+                        <li>Colo Colo (repechaje)</li>
+                        <li>Huachipato (repechaje)</li>
+                    </ul>
+                    <h4 class="titulo-copas1">COLOMBIA</h4>
+                    <ul>
+                        <li>Millonarios (grupos)</li>
+                        <li>Junior (grupos)</li>
+                        <li>Aguilas Doradas (repechaje)</li>
+                        <li>Atlético Nacional (repechaje)</li>
+                    </ul>
+                    <h4 class="titulo-copas1">ECUADOR</h4>
+                    <ul>
+                        <li>Liga de Quito (grupos)</li>
+                        <li>Independiente del Valle (grupos)</li>
+                        <li>Barcelona (grupos)</li>
+                        <li>El Nacional (repechaje)</li>
+                        <li>Aucas (repechaje)</li>
+                    </ul>
+                    <h4 class="titulo-copas1">PARAGUAY</h4>
+                    <ul>
+                        <li>Libertad (grupos)</li>
+                        <li>Cerro Porteño (grupos)</li>
+                        <li>Sportivo Trinidense (repechaje)</li>
+                        <li>Nacional (repechaje)</li>
+                    </ul>
+                </div>
+                <div class="copas-1">
+                    <h4 class="titulo-copas1">PERÚ</h4>
+                    <ul>
+                        <li>Universitario (grupos)</li>
+                        <li>Alianza Lima (grupos)</li>
+                        <li>Sporting Cristal (repechaje)</li>
+                        <li>Melgar (repechaje)</li>
+                    </ul>
+                    <h4 class="titulo-copas1">URUGUAY</h4>
+                    <ul>
+                        <li>Liverpool (grupos)</li>
+                        <li>Peñarol (grupos)</li>
+                        <li>Nacional (repechaje)</li>
+                        <li>Defensor Sporting (repechaje)</li>
+                    </ul>
+                    <h4 class="titulo-copas1">VENEZUELA</h4>
+                    <ul>
+                        <li>Deportivo Táchira (grupos)</li>
+                        <li>Caracas (grupos)</li>
+                        <li>Portuguesa (repechaje)</li>
+                        <li>Academia Puerto Cabello (repechaje)</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 id="seccion4" class="titulo-copas">
+                EQUIPOS CLASIFICADOS PARA LA COPA SUDAMERICANA 2024
+            </h2>
+            <div class="copas">
+                <div class="copas-1">
+                    <h4 class="titulo-copas1">ARGENTINA</h4>
+                    <ul>
+                        <li>Boca</li>
+                        <li>Racing</li>
+                        <li>Defensa y Justicia</li>
+                        <li>Lanús</li>
+                        <li>Belgrano</li>
+                        <li>Argentinos</li>
+                    </ul>
+                    <h4 class="titulo-copas1">BOLIVIA</h4>
+                    <ul>
+                        <li>Aurora/Jorge Wilstermann</li>
+                        <li>Nacional Potosí</li>
+                        <li>Real Tomayapo</li>
+                        <li>Universitario de Vinto</li>
+                    </ul>
+                    <h4 class="titulo-copas1">BRASIL</h4>
+                    <ul>
+                        <li>Athletico Paranaense</li>
+                        <li>Internacional</li>
+                        <li>Fortaleza</li>
+                        <li>Cuiabá</li>
+                        <li>Corinthians</li>
+                        <li>Cruzeiro</li>
+                    </ul>
+                </div>
+                <div class="copas-1">
+                    <h4 class="titulo-copas1">CHILE</h4>
+                    <ul>
+                        <li>Coquimbo Unido</li>
+                        <li>Everton</li>
+                        <li>Universidad Católica</li>
+                        <li>Unión La Calera</li>
+                    </ul>
+                    <h4 class="titulo-copas1">COLOMBIA</h4>
+                    <ul>
+                        <li>Independiente Medellín</li>
+                        <li>América de Cali</li>
+                        <li>Deportes Tolima</li>
+                        <li>Alianza Petrolera</li>
+                    </ul>
+                    <h4 class="titulo-copas1">ECUADOR</h4>
+                    <ul>
+                        <li>Delfín</li>
+                        <li>Universidad Católica</li>
+                        <li>Técnico Universitario</li>
+                        <li>Deportivo Cuenca</li>
+                    </ul>
+                    <h4 class="titulo-copas1">PARAGUAY</h4>
+                    <ul>
+                        <li>Guaraní</li>
+                        <li>Olimpia</li>
+                        <li>Sportivo Ameliano</li>
+                        <li>Sportivo Luqueño</li>
+                    </ul>
+                </div>
+                <div class="copas-1">
+                    <h4 class="titulo-copas1">PERÚ</h4>
+                    <ul>
+                        <li>Sport Huancayo</li>
+                        <li>Asociación Deportiva Tarma</li>
+                        <li>Deportivo Garcilaso</li>
+                        <li>Universidad César Vallejo</li>
+                    </ul>
+                    <h4 class="titulo-copas1">URUGUAY</h4>
+                    <ul>
+                        <li>Montevideo Wanderers</li>
+                        <li>Racing</li>
+                        <li>Cerro Largo</li>
+                        <li>Danubio</li>
+                    </ul>
+                    <h4 class="titulo-copas1">VENEZUELA</h4>
+                    <ul>
+                        <li>Carabobo</li>
+                        <li>Deportivo La Guaira</li>
+                        <li>Metropolitanos</li>
+                        <li>Rayo Zuliano</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boton">
+                <button><a href="">IR ARRIBA</a></button>
+            </div>
+            <!--ACORDION-->
+            <div id="seccion2">
+                <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseOne"
+                            >
+                                <h2><b>TABLA DE POSICIONES ZONA A</b></h2>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                <h3 class="gol">POSICIONES ZONA A</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Pos</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>PG</th>
+                                            <th>PE</th>
+                                            <th>PP</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>PTS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo huracan.png') }}"
+                                                    alt=""
+                                                />
+                                                Huracán
+                                            </td>
+                                            <td>14</td>
+                                            <td>8</td>
+                                            <td>2</td>
+                                            <td>4</td>
+                                            <td>19</td>
+                                            <td>11</td>
+                                            <td>+8</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo river-plate.png') }}"
+                                                    alt=""
+                                                />
+                                                River Plate
+                                            </td>
+                                            <td>14</td>
+                                            <td>7</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>24</td>
+                                            <td>16</td>
+                                            <td>+8</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo banfield.png') }}"
+                                                    alt=""
+                                                />
+                                                Banfield
+                                            </td>
+                                            <td>14</td>
+                                            <td>6</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                            <td>11</td>
+                                            <td>6</td>
+                                            <td>+5</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo rosario-central.png') }}"
+                                                    alt=""
+                                                />
+                                                Rosario Central
+                                            </td>
+                                            <td>14</td>
+                                            <td>6</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                            <td>17</td>
+                                            <td>13</td>
+                                            <td>+4</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo independiente.png') }}"
+                                                    alt=""
+                                                />
+                                                Independiente
+                                            </td>
+                                            <td>14</td>
+                                            <td>6</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                            <td>15</td>
+                                            <td>11</td>
+                                            <td>+4</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo velez-sarsfield.png') }}"
+                                                    alt=""
+                                                />
+                                                Vélez Sarsfield
+                                            </td>
+                                            <td>14</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>17</td>
+                                            <td>14</td>
+                                            <td>+3</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo instituto-1.png') }}"
+                                                    alt=""
+                                                />
+                                                Instituto
+                                            </td>
+                                            <td>14</td>
+                                            <td>4</td>
+                                            <td>8</td>
+                                            <td>2</td>
+                                            <td>11</td>
+                                            <td>7</td>
+                                            <td>+4</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo colon.png') }}"
+                                                    alt=""
+                                                />
+                                                Colón de Santa Fe
+                                            </td>
+                                            <td>14</td>
+                                            <td>6</td>
+                                            <td>2</td>
+                                            <td>6</td>
+                                            <td>19</td>
+                                            <td>17</td>
+                                            <td>+2</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo talleres-de-cordoba.png') }}"
+                                                    alt=""
+                                                />
+                                                Talleres de Córdoba
+                                            </td>
+                                            <td>14</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>+0</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo tucuman.png') }}"
+                                                    alt=""
+                                                />
+                                                Atlético Tucumán
+                                            </td>
+                                            <td>14</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>9</td>
+                                            <td>12</td>
+                                            <td>-3</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo gimnasia-esgrima-plata.png') }}"
+                                                    alt=""
+                                                />
+                                                Gimnasia La Plata
+                                            </td>
+                                            <td>14</td>
+                                            <td>4</td>
+                                            <td>3</td>
+                                            <td>7</td>
+                                            <td>13</td>
+                                            <td>21</td>
+                                            <td>-8</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo argentinos-juniors.jpg') }}"
+                                                    alt=""
+                                                />
+                                                Argentinos Juniors
+                                            </td>
+                                            <td>14</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>19</td>
+                                            <td>23</td>
+                                            <td>-4</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo barracas-central.png') }}"
+                                                    alt=""
+                                                />
+                                                Barracas Central
+                                            </td>
+                                            <td>14</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>10</td>
+                                            <td>21</td>
+                                            <td>-11</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo arsenal.png') }}"
+                                                    alt=""
+                                                />
+                                                Arsenal de Sarandí
+                                            </td>
+                                            <td>14</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>7</td>
+                                            <td>10</td>
+                                            <td>15</td>
+                                            <td>-5</td>
+                                            <td>13</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseTwo"
+                            >
+                                <h2><b>TABLA DE POSICIONES ZONA B</b></h2>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseTwo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                <h3 class="gol">POSICIONES ZONA B</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Pos</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>PG</th>
+                                            <th>PE</th>
+                                            <th>PP</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>PTS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo rancing-club.png') }}"
+                                                    alt=""
+                                                />
+                                                Racing Club
+                                            </td>
+                                            <td>14</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>2</td>
+                                            <td>22</td>
+                                            <td>16</td>
+                                            <td>+6</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo godoy-cruz.png') }}"
+                                                    alt=""
+                                                />
+                                                Godoy Cruz
+                                            </td>
+                                            <td>14</td>
+                                            <td>5</td>
+                                            <td>7</td>
+                                            <td>2</td>
+                                            <td>14</td>
+                                            <td>9</td>
+                                            <td>+5</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo belgrano.png') }}"
+                                                    alt=""
+                                                />
+                                                Belgrano
+                                            </td>
+                                            <td>14</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>20</td>
+                                            <td>18</td>
+                                            <td>+2</td>
+                                            <td>21</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo platense.png') }}"
+                                                    alt=""
+                                                />
+                                                Platense
+                                            </td>
+                                            <td>14</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>4</td>
+                                            <td>13</td>
+                                            <td>16</td>
+                                            <td>-3</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo central-cordoba-se.jpg') }}"
+                                                    alt=""
+                                                />
+                                                Central Córdoba
+                                            </td>
+                                            <td>14</td>
+                                            <td>5</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>11</td>
+                                            <td>14</td>
+                                            <td>-3</td>
+                                            <td>19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo newells-old-boys.png') }}"
+                                                    alt=""
+                                                />
+                                                Newell's Old Boys
+                                            </td>
+                                            <td>14</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>14</td>
+                                            <td>10</td>
+                                            <td>+4</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo boca-juniors.png') }}"
+                                                    alt=""
+                                                />
+                                                Boca Juniors
+                                            </td>
+                                            <td>14</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>17</td>
+                                            <td>16</td>
+                                            <td>+1</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo san-lorenzo.png') }}"
+                                                    alt=""
+                                                />
+                                                San Lorenzo
+                                            </td>
+                                            <td>14</td>
+                                            <td>3</td>
+                                            <td>9</td>
+                                            <td>2</td>
+                                            <td>11</td>
+                                            <td>11</td>
+                                            <td>+0</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo estudiantes-de-la-plata.png') }}"
+                                                    alt=""
+                                                />
+                                                Estudiantes de La Plata
+                                            </td>
+                                            <td>14</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>11</td>
+                                            <td>11</td>
+                                            <td>-2</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo sarmiento-de-junin.png') }}"
+                                                    alt=""
+                                                />
+                                                Sarmiento
+                                            </td>
+                                            <td>14</td>
+                                            <td>3</td>
+                                            <td>7</td>
+                                            <td>4</td>
+                                            <td>8</td>
+                                            <td>8</td>
+                                            <td>+0</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo union-santa-fe.png') }}"
+                                                    alt=""
+                                                />
+                                                Unión de Santa Fe
+                                            </td>
+                                            <td>14</td>
+                                            <td>3</td>
+                                            <td>7</td>
+                                            <td>4</td>
+                                            <td>10</td>
+                                            <td>13</td>
+                                            <td>-3</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo defensa-y-justicia.png') }}"
+                                                    alt=""
+                                                />
+                                                Defensa y Justicia
+                                            </td>
+                                            <td>14</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>12</td>
+                                            <td>16</td>
+                                            <td>-4</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo tigre.png') }}"
+                                                    alt=""
+                                                />
+                                                Tigre
+                                            </td>
+                                            <td>14</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>13</td>
+                                            <td>-5</td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo lanus.png') }}"
+                                                    alt=""
+                                                />
+                                                Lanús
+                                            </td>
+                                            <td>14</td>
+                                            <td>2</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                            <td>9</td>
+                                            <td>14</td>
+                                            <td>-5</td>
+                                            <td>12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseThree"
+                            >
+                                <h2><b>TABLA DE GOLEADORES</b></h2>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseThree"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                <h3 class="gol">GOLEADORES</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Posición</th>
+                                            <th>Jugador</th>
+                                            <th>Equipo</th>
+                                            <th>Goles</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>L. Passerini</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo belgrano.png') }}"
+                                                    alt=""
+                                                />
+                                                Belgrano
+                                            </td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>L. Gondou</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo argentinos-juniors.jpg') }}"
+                                                    alt=""
+                                                />
+                                                Argentinos Juniors
+                                            </td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>A. Bareiro</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo san-lorenzo.png') }}"
+                                                    alt=""
+                                                />
+                                                San Lorenzo
+                                            </td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>M. Merentiel</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo boca-juniors.png') }}"
+                                                    alt=""
+                                                />
+                                                Boca Juniors
+                                            </td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>M. Borja</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo river-plate.png') }}"
+                                                    alt=""
+                                                />
+                                                River Plate
+                                            </td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>S. Castro</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo velez-sarsfield.png') }}"
+                                                    alt=""
+                                                />
+                                                Vélez Sarsfield
+                                            </td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>J. Rondón</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo river-plate.png') }}"
+                                                    alt=""
+                                                />
+                                                River Plate
+                                            </td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>J. Matt</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo rosario-central.png') }}"
+                                                    alt=""
+                                                />
+                                                Rosario Central
+                                            </td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>C. Aquino</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo velez-sarsfield.png') }}"
+                                                    alt=""
+                                                />
+                                                Vélez Sarsfield
+                                            </td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>A. Martínez</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Equipo instituto-1.png') }}"
+                                                    alt=""
+                                                />
+                                                Instituto
+                                            </td>
+                                            <td>5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>DERECHOS RESERVADOS</p>
+            <p>TRABAJO PRÁCTICO EXAMEN FINAL</p>
+            <p>MARCELO ALLEGRINI</p>
+            <div class="boton">
+                <button><a href="{{ url_for('login') }}">LOGIN</a></button>
+                <button>
+                    <a href="{{ url_for('registro') }}">REGISTRARSE</a>
+                </button>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <title>REGISTRO</title> 
+        <!-- Required meta tags --> 
+        <meta charset="utf-8" /> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!-- Animate.css --> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+
+        <!-- Custom CSS --> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css') }}">
+        
+        <!-- Favicon --> 
+        <link rel="icon" type="imagenes/x-icon" href="{{ url_for('static', filename='imagenes/pelota de futbol.jpg') }}">
+</head>
+<body>
+    <div class="contenedor"> 
+        <div class="div1"> 
+            <fieldset>
+                <legend>REGISTRARSE</legend>
+                <form action="{{ url_for('registro') }}" method="POST"> 
+                    <input type="text" placeholder="Nombre" name="nombre" required> 
+                    <input type="email" placeholder="Correo Electronico" name="correo" required> 
+                    <input type="text" placeholder="Usuario" name="usuario" required> 
+                    <input type="password" placeholder="Contraseña" name="password" required> 
+                    <label>Provincia</label><br> 
+                    <select name="provincia"> 
+                        <option value="Buenos Aires">Buenos Aires</option> 
+                        <option value="Catamarca">Catamarca</option> 
+                        <option value="Chaco">Chaco</option> 
+                        <option value="Chubut">Chubut</option> 
+                        <option value="Córdoba">Córdoba</option> 
+                        <option value="Corrientes">Corrientes</option> 
+                        <option value="Entre Rios">Entre Rios</option> 
+                        <option value="Formosa">Formosa</option> 
+                        <option value="Jujuy">Jujuy</option> 
+                        <option value="La Pampa">La Pampa</option> 
+                        <option value="La Rioja">La Rioja</option> 
+                        <option value="Mendoza">Mendoza</option> 
+                        <option value="Misiones">Misiones</option> 
+                        <option value="Neuquén">Neuquén</option> 
+                        <option value="Rio Negro">Rio Negro</option> 
+                        <option value="Salta">Salta</option> 
+                        <option value="San Juan">San Juan</option> 
+                        <option value="San Luis">San Luis</option> 
+                        <option value="Santa Cruz">Santa Cruz</option> 
+                        <option value="Santiago del Estero">Santiago del Estero</option> 
+                        <option value="Tierra del Fuego">Tierra del Fuego</option> 
+                        <option value="tucumán">tucumán</option> 
+                    </select><br><br> 
+                    <textarea name="descripcion" cols="40" rows="7">Escribe tu Comentario aqui</textarea><br> <button class="registro">REGISTRARSE</button> 
+                </form> 
+            </fieldset>
+        </div> 
+    </div> 
+    <div class="div3"> 
+        <button type="button" ><a href="{{ url_for('login') }}">LOGIN</a></button>
+    </div>
+</body>
+</html>

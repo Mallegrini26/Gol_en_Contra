@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FÚTBOL DE ASCENSO</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/futbol_ascenso.css') }}"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="imagenes/x-icon"
+            href="{{ url_for('static', filename='imagenes/pelota de futbol.jpg') }}"
+        />
+    </head>
+    <body>
+        <header>
+            <img
+                class="img-logo"
+                src="{{ url_for('static', filename='imagenes/foto imagen de pelota de futbol.png') }}"
+                alt=""
+            />
+            <h1>FÚTBOL DE ASCENSO</h1>
+            <img
+                class="img-logo"
+                src="{{ url_for('static', filename='imagenes/foto imagen de pelota de futbol.png') }}"
+                alt=""
+            />
+        </header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">INICIO</a></li>
+                <li><a href="{{ url_for('futbol') }}">FÚTBOL</a></li>
+                <li><a href="#seccion1">TABLA DE POSICIONES</a></li>
+                <li>
+                    <a href="{{ url_for('futbol_internacional') }}"
+                        >FÚTBOL INTERNACIONAL</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <h2 class="titulo">NOTICIAS</h2>
+        <main>
+            <div class="contenedor">
+                <div class="contenedor-0">
+                    <h5 class="h5-1">RIESTRA ASCENDIÓ A PRIMERA</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Foto Riestra.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Riestra venció 1-0 a Deportivo Maipú y ascendió a la
+                            Primera División del fútbol argentino Con un gol
+                            Gustavo Fernández, Riestra venció 1-0 a Deportivo
+                            Maipú y ascendió a la Primera Nacional. El Malevo de
+                            Pompeya hizo historia y ascendió a la Primera
+                            División por lo que desde el próximo año, jugará en
+                            La Liga Profesional 2024 junto con Independiente
+                            Rivadavia. Este sábado 2 de diciembre, en el Estadio
+                            Monumental de Alta Córdoba por la final de la
+                            Primera B Nacional para el segundo ascenso,
+                            Deportivo Riestra venció 1-0 a Deportivo Maipú con
+                            un gol de Gustavo Fernández. Un primer tiempo
+                            caliente, que tuvo más de un cruce. En los primeros
+                            45 minutos, el equipo de Matías Módolo fue quien
+                            tuvo más la posesión y las mejores chances de cara
+                            al gol. La primera iba a llegara los 11 minutos con
+                            un cabezazo de Eric Tovo, que ganó en las alturas y
+                            la pelota se fue muy cerca del palo. Walter Acuña y
+                            Jonathan Goitia también tuvieron la chance de abrir
+                            el marcador pero no estuvieron finos en la
+                            definición, por lo que se fueron con el 0-0 al
+                            descanso. Para el segundo tiempo, Maipú salió más
+                            adelantado a buscar la apertura del marcador. A los
+                            6 minutos iba a llegar la primera polémica, cuando
+                            en una contra, Lázaro Romero le puso los tapones en
+                            los gemelos a Luciano Herrera pero para Darío
+                            Herrera y sus asistentes, no fue una jugada de
+                            expulsión y le sacó la amarilla. Cuando el reloj
+                            marcaba los 15 minutos, tras un centro de Cachete
+                            Acuña, Gustavo Fernández la empujó y puso el 1-0
+                            para el Malevo. Los dirigidos por Matías Módolo
+                            tuvieron chances para aumentar el marcador pero sin
+                            poder concretar Ya sobre el final, Deportivo Maipú
+                            estuvo cerca del empate, primero con un remate de
+                            Santiago González al travesaño y luego Ignacio Arce,
+                            con una doble atajada, iba a salvar el arco del
+                            Malevo. Finalmente fue victoria 1-0 de Deportivo
+                            Riestra, que por primera vez en su historia jugará
+                            en la Primera División.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-2">¿TREZEGUET NUEVO DT DE ALDOSIVI?</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Fto david-trezeguet.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            ¿David Trezeguet será el nuevo DT de Aldosivi en la
+                            Primera Nacional? El francés campeón del mundo y ex
+                            River Plate, David Trezeguet, podría llegar a Mar
+                            del Plata para dirigir a Aldovisi. Una de las bombas
+                            que revolucionaría el mercado de pases del fútbol
+                            argentino, se podría dar en la Primera Nacional. Y
+                            es que Aldosivi de Mar del Plata, que se salvó por
+                            muy poco de descender al Torneo Federal, está en
+                            búsqueda de un nuevo entrenador y en las últimas
+                            horas, sonó fuerte la de el ex River Plate y campeón
+                            del mundo con Francia, David Trezeguet. El Tiburón
+                            de Mar del Plata, logró sacar un valioso empate 0-0
+                            ante Ferro en la última fecha, lo que ayudó para que
+                            se salve y se mantenga en la Primera Nacional. Pero
+                            Aldosivi quiere cambiar de cara e intentar pelear
+                            para volver a la Primera División, lo que no pudo
+                            hacer este año ni con Fernando Quiroz ni con Walter
+                            Coyette, por lo que los directivos ya están en la
+                            búsqueda de un nuevo entrenador y quieren
+                            revolucionar la Primera Nacional, con la llegada de
+                            David Trezeguet. El campeón del mundo con Francia en
+                            1998, ya ha pasado su carrera por la Primera
+                            Nacional, cuando el 2012 estuvo en el histórico
+                            acenso de River Plate. Esta podría ser su primera
+                            experiencia como entrenador para David Trezeguet,
+                            quien llegaría a Mar del Plata gracias a importante
+                            flujo financiero en el Tiburón. Pero el francés no
+                            es el único candidato a llegar a Aldosivi, ya que
+                            también suenan los nombres de Mauro Camoranesi,
+                            Ezequiel Medrán y Sebastián Battaglia.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-3">INDEPENDIENTE JUGARA EN PRIMERA</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Foto la lepra a primera division.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Independiente Rivadavia venció a Almirante Brown y
+                            jugará la Liga Profesional 2024 Con goles de Sánchez
+                            y Ramis, Independiente Rivadavia venció 2-0 a
+                            Almirante Brown y es el campeón de la Primera
+                            Nacional. La Liga Profesional tiene un nuevo
+                            inquilino para el 2024, la Lepra mendocina es el
+                            nuevo campeón de la Primera Nacional y jugará en la
+                            máxima división desde el próximo año. Con goles de
+                            Brian Sánchez y Victorio Ramis en el tiempo de
+                            descuento, Independiente Rivadavia derrotó 2-0 a
+                            Almirante Brown. Luego de una dura campaña en la que
+                            se tuvo que pelear hasta en la última fecha cuando
+                            dejaron afuera de la final a Chacarita y Deportivo
+                            Maipú, se vive momentos de alegría en el Parque
+                            General San Martín de Mendoza ya que Independiente
+                            Rivadavía logró, por primera vez en su historia,
+                            ascender a la Primera División del Fútbol Argentino.
+                            Un partido que tuvo un tiempo para cada uno, en el
+                            primero las ocasiones más claras las tuvo Almirante
+                            Brown, pero sin lograr concretar. En el segundo
+                            tiempo, con varios cambios, Independiente supo
+                            manejar el partido y estuvo cerca de romper el cero,
+                            pero la efectividad no fue la mejor y el partido
+                            tuvo que irse a los tiempos extras. En el primer
+                            tiempo extra, el partido iba a continuar cerrado,
+                            pero con el equipo mendocino siempre cerca al gol,
+                            como cuando el Turco Ham estrelló la pelota en el
+                            travesaño tras un tiro libre. Y cuando parecía que
+                            el campeón se iba a definir en los penales, en una
+                            ráfaga, Independiente se quedó con el triunfo.
+                            Primero apareció Brian Sánchez para poner el 1-0
+                            cuando apenas quedaban seis minutos de juego y
+                            cuatro minutos después, Victorio Ramis selló la
+                            victoria que le da el título de la Primera Nacional
+                            de Independiente Rivadavia y el derecho de, por
+                            primera vez en su historia, jugar en la Primera
+                            División, donde lo espera su clásico rival, Godoy
+                            Cruz.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-4">
+                        TALLERES ASCIENDE A LA PRIMERA NACIONAL
+                    </h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Foto talleres campeon de la 1era b.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Talleres (RE) es el campeón de la Primera B Metro y
+                            ascendió a la Primera Nacional Tras el 0-0 en la
+                            ida, Talleres de Remedio de Escalada derrotó 1-0 a
+                            San Miguel en la vuelta y se coronó campeón de la
+                            Primera B Metropolitana. Talleres de Remedio de
+                            Escalada es el campeón de la Primera B Nacional y
+                            ascendió a la Primera Nacional. Los Albirrojos
+                            vencieron 1-0 a San Miguel en Los Polvorines con un
+                            gol de Lautaro Villegas y, tras el 0-0 en la ida, se
+                            consagró campeón de la categoría. Pasaron 28 años
+                            para que Talleres de Remedio Escalada vuelva a la
+                            segunda división del fútbol argentino, y fue gracias
+                            Lautaro Villegas, quien fue el héroe de la tarde con
+                            su gol a los 36 minutos del segundo tiempo. En el
+                            partido de ida, el cual quedó 0-0, el encuentro
+                            había sido muy cerrado, parejo, y en la vuelta no
+                            fue distinto, pero fue el goleador Albirrojo quien
+                            pudo romper la paridad, tras recibir una pelota
+                            cruzada, controló con el pecho y definió cruzado.
+                            Sobre el final, Talleres pudo aumentar la ventaja
+                            hasta en dos ocasiones, pero Joaquín Pucheta tapó
+                            dos mano a mano, pero no le alcanzó y finalmente, el
+                            Albirrojo vuelve a la Primera Nacional, donde no
+                            participa desde el 1994-1995.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-5">
+                        FECHA CONFIRMADA PARA EL PRIMER ASCENSO
+                    </h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Foto final del primee ascenso.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            AFA confirmó la fecha y hora confirmada para la
+                            final entre Independiente y Almirante Brown ¿cuándo
+                            se juega? En una reunión entre presidentes de
+                            Almirante Brown e Independiente Rivadavia con
+                            Claudio Tapia, se definió el horario y la fecha para
+                            la final por el primer ascenso. Este viernes 20 de
+                            octubre, la Asociación del Fútbol Argentino (AFA),
+                            dio a conocer la confirmación de la fecha y hora de
+                            la final de la Primera Nacional entre Almirante
+                            Brown e Independiente Rivadavia, por el primer
+                            ascenso a la Liga Profesional 2024. En una reunión
+                            entre el presidente de AFA, Claudio Tapia, y los
+                            presidentes de los clubes finalistas. Marcelo
+                            Achile, Gerente de Torneos de la AFA y Federico
+                            Beligoy, Director Nacional de Arbitraje, se definió
+                            la fecha y hora de la final entre Independiente
+                            Rivadavia y Almirante Brown, por el primer ascenso a
+                            la Liga Profesional. La final se jugará el próximo
+                            domingo 29 de octubre, desde las 18:00 horas, eso
+                            si, aún con sede por confirmar, pero podría estar
+                            entre Santiago del Estero, Santa Fe o Córdoba. Lo
+                            que también ya está definido es la terna arbitral.
+                            Nicolás Ramírez será el juez principal, Maximiliano
+                            Del Yesso y Sebastián Raineri serán asistentes
+                            mientras que Pablo Echevarría. Aunque se rumoreó,
+                            finalmente se decidió que no habrá VAR como en todo
+                            el torneo. Para la final, en caso haya igualdad en
+                            los 90 minutos, se jugará dos tiempos suplementarios
+                            de 15 minutos cada uno y de persistir la paridad,
+                            todo se definirá en la ejecución de tiros de penal.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-6">¿CUÁNDO SE JUEGA EL PRIMER ASCENSO?</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Foto por el ascenso.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            ¿Cuándo y dónde se juega la final de la Primera
+                            Nacional por el primer ascenso a la Liga
+                            Profesional? La Primera Nacional está cerca del
+                            final y ya se conoce a uno de los que disputará la
+                            final por el primer ascenso. Conocé todo los
+                            detalles acá. La gloriosa Primera Nacional está por
+                            llegar a su fin y dentro de poco se jugará el
+                            Reducido, pero primero será la final por el primer
+                            ascenso a la Liga Profesional. Independiente
+                            Rivadavia logró quedarse con el primer puesto de la
+                            Zona B y espera rival que se conocerá este lunes 16
+                            de octubre. ¿Cuándo se jugará la final de la Primera
+                            Nacional por el primer ascenso? Aún no hay
+                            confirmación oficial, pero según lo estimado, el
+                            partido para conocer al primer ascendido a la Liga
+                            Profesional se jugará el próximo 28 de octubre en
+                            estadio neutral aún por confirmar. Independiente
+                            Rivadavia se ganó el derecho a disputar este
+                            encuentro tras haberse quedado con el primer lugar
+                            de la Zona B luego de vencer 1-0 a Deportivo Maipú y
+                            que Chacarita no le haya podido ganar a Atlético
+                            Rafaela. Por otro lado, en la Zona A aún falta
+                            conocer al ganador. Agropecuario y Almirante Brown,
+                            ambos con 58 puntos, tienen la primera opción para
+                            llegar a la final, mientras que San Martín de
+                            Tucumán y Estudiantes (RC) estarán a la espectativa
+                            de lo que pase con ambos. Cuándo se juega el
+                            Reducido de la Primera Nacional Al igual que la
+                            final, el Reducido aún no tienen fecha confirmada
+                            oficialmente, pero según lo estipulado, el mini
+                            torneo comenzará luego de la final, por lo que se
+                            daría entre el 4 de noviembre y el 25 del mismo mes.
+                            Los clasificados de la Zona B ya están definidos,
+                            solo resta conocer a los de la Zona A, que
+                            finalizará este lunes 16 de octubre. Cómo están hoy
+                            los cruces del Reducido Almirante Brown vs. Ferro
+                            Chacarita vs. Defensores de Belgrano Deportivo Maipú
+                            vs. San Martín de San Juan San Martín de Tucumán vs.
+                            Riestra Quilmes vs. Deportivo Morón Estudiantes de
+                            Río Cuarto vs. Mitre de Santiago del Estero
+                            Temperley vs. Atlético de Rafaela
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-7">FECHA Y HORARIOS DE LA FECHA 37</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Foto Fecha 37.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Fecha 37 de la Primera Nacional: programación,
+                            resultados y tabla de posiciones Este fin de semana
+                            se juega una nueva fecha del torneo de ascenso.
+                            Conocé acá la programación completa. Se acerca el
+                            final del torneo. Desde este viernes 6 al domingo 8
+                            de octubre, se jugará la fecha 37 y 33 de la Primera
+                            Nacional, que tiene a Agropecuario como líder de la
+                            Zona A con 57 puntos, mientras que Chacarita es el
+                            puntero de la Zona B con 65 puntos. Apenas quedan
+                            dos fechas de la gloriosa Primera Nacional y se está
+                            definiendo las ubicaciones para los playoff, así
+                            cómo también los equipos que disputarán la final por
+                            el pase directo a la Primera División. Programación
+                            completa de la fecha 37 y 33 de la Zona A y Zona B
+                            de la Primera Nacional Zona A - Fecha 37: Viernes 6
+                            de octubre: 15.30 Horas: Chicago – Defensores De
+                            Belgrano 21.10 Horas: All Boys – Estudiantes (Río
+                            Cuarto) Sábado 7 de octubre: 15.00 Horas: San Telmo
+                            – Güemes (Sgo. Del Estero) 15.30 Horas: Brown
+                            (Puerto Madryn) – Alvarado 16.00 Horas: Agropecuario
+                            – Gimnasia (Mendoza) 18.10 Horas: Temperley - Morón
+                            Domingo 8 de octubre: 15.00 Horas: San Martín
+                            (Tucumán) – Almirante Brown 15.30 Horas: Defensores
+                            Unidos – Flandria 15.30: Horas Almagro - Patronato
+                            Libre: San Martín (San Juan) Zona B - Fecha 33:
+                            Sábado 7 de octubre: 13.35 Horas: Atlanta - Quilmes
+                            15.30 Horas: Tristán Suárez – Brown (Adrogué) 18.00
+                            Horas: Chaco For Ever – Dep. Madryn Domingo 8 de
+                            octubre: 15.30 Horas: Riestra - Ferro 15.30 Horas:
+                            Aldosivi – Dep. Maipú 16.50 Horas: Chacarita –
+                            Estudiantes 17.00 Horas: Mitre – Atl. Rafaela 18.00
+                            Horas: Racing De Córdoba – Gimnasia (Jujuy) 20.30
+                            Horas: Independiente Rivadavia – Villa Dálmine
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-8">FECHA Y HORARIOS DE LA FECHA 29 Y 26</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static', filename='imagenes/Foto Fecha 29.webp') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            Fecha 29 y 26 de la Primera Nacional: programación,
+                            horarios y tabla de posiciones Desde este martes 15
+                            de agosto, se juega una nueva fecha de la Primera
+                            Nacional. Conocé acá la programación completa de la
+                            jornada. Desde este martes 15 de agosto, se juega
+                            otra fecha más de la Primera B Nacional, que tendrá
+                            la fecha 29 de la Zona A, que tiene como líder a
+                            Almirante Brown, y la fecha 26 de la Zona B, que
+                            tiene a Alte Brown y Deportivo Maipú, como punteros.
+                            Mirá acá la programación completa de la jornada.
+                            Zona A - Fecha 29: Martes 15 de agosto: 13.30 horas:
+                            Estudiantes (Río Cuarto) - Alvarado 15.00 horas: San
+                            Telmo – Agropecuario 15.30 horas: Temperley – Brown
+                            (Pto. Madryn) 17.00 horas: Almirante Brown -
+                            Patronato 19.05 horas: Defensores De Belgrano –
+                            Gimnasia (Mendoza) 20.00 horas: All Boys – Flandria
+                            Miércoles 16 de agosto: 15.30 horas: Chicago – San
+                            Martín (San Juan) 17.30 horas: Morón – Güemes (Sgo.
+                            Del Estero) 21.30 horas: San Martín (Tucumán) –
+                            Defensores Unidos Libre: Almagro Zona B - Fecha 26:
+                            Viernes 18 de agosto: 15.00 horas: Riestra – Chaco
+                            For Ever Sábado 19 de agosto: 15.00 horas:
+                            Estudiantes - Rafaela 15.00 horas: Brown (Adrogué) –
+                            Dep. Madryn 15.00 horas: Tristán Suárez – Aldosivi
+                            17.10 horas: Atlanta – Chacarita 19.10 horas: Ferro
+                            – Independiente Rivadavia 19.35 horas: Quilmes –
+                            Villa Dálmine Domingo 20 de agosto: 15.50 horas:
+                            Gimnasia (Jujuy) – Dep. Maipú 17.00 horas: Racing De
+                            Córdoba - Mitre
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <button><a href="">IR ARRIBA</a></button>
+            </div>
+            <!--ACORDION-->
+            <div id="seccion1">
+                <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseOne"
+                            >
+                                <h2><b>TABLA DE POSICIONES ZONA A</b></h2>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                <h3 class="gol">POSICIONES ZONA A</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Pos</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>PG</th>
+                                            <th>PE</th>
+                                            <th>PP</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>PTS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Almirante Brown.png') }}"
+                                                    alt=""
+                                                />
+                                                Almirante Brown
+                                            </td>
+                                            <td>36</td>
+                                            <td>17</td>
+                                            <td>10</td>
+                                            <td>9</td>
+                                            <td>36</td>
+                                            <td>30</td>
+                                            <td>+6</td>
+                                            <td>61</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Agropecuario.png') }}"
+                                                    alt=""
+                                                />
+                                                Agropecuario
+                                            </td>
+                                            <td>36</td>
+                                            <td>17</td>
+                                            <td>8</td>
+                                            <td>11</td>
+                                            <td>46</td>
+                                            <td>36</td>
+                                            <td>+10</td>
+                                            <td>59</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club San-Martin-Tucuman.png') }}"
+                                                    alt=""
+                                                />
+                                                San-Martin Tucumán
+                                            </td>
+                                            <td>36</td>
+                                            <td>15</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>38</td>
+                                            <td>24</td>
+                                            <td>+14</td>
+                                            <td>56</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Estudiantes-Rio-Cuarto.png') }}"
+                                                    alt=""
+                                                />
+                                                Estudiantes Río Cuarto
+                                            </td>
+                                            <td>36</td>
+                                            <td>16</td>
+                                            <td>7</td>
+                                            <td>13</td>
+                                            <td>34</td>
+                                            <td>32</td>
+                                            <td>+2</td>
+                                            <td>55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Gimnasia-Mendoza.png') }}"
+                                                    alt=""
+                                                />
+                                                Gimnasia-Mendoza
+                                            </td>
+                                            <td>36</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>9</td>
+                                            <td>45</td>
+                                            <td>37</td>
+                                            <td>+8</td>
+                                            <td>53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club San-Martin de San Juan.png') }}"
+                                                    alt=""
+                                                />
+                                                San Martin de San Juan
+                                            </td>
+                                            <td>36</td>
+                                            <td>14</td>
+                                            <td>11</td>
+                                            <td>11</td>
+                                            <td>44</td>
+                                            <td>38</td>
+                                            <td>+6</td>
+                                            <td>53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Temperley.png') }}"
+                                                    alt=""
+                                                />
+                                                Temperley
+                                            </td>
+                                            <td>36</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>9</td>
+                                            <td>42</td>
+                                            <td>38</td>
+                                            <td>+4</td>
+                                            <td>53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Atletico-Güemes.png') }}"
+                                                    alt=""
+                                                />
+                                                Atlético Güemes
+                                            </td>
+                                            <td>36</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>9</td>
+                                            <td>37</td>
+                                            <td>34</td>
+                                            <td>+3</td>
+                                            <td>53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Deportivo-Moron.png') }}"
+                                                    alt=""
+                                                />
+                                                Deportivo Morón
+                                            </td>
+                                            <td>36</td>
+                                            <td>14</td>
+                                            <td>11</td>
+                                            <td>11</td>
+                                            <td>38</td>
+                                            <td>37</td>
+                                            <td>+1</td>
+                                            <td>53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Nueva-Chicago.png') }}"
+                                                    alt=""
+                                                />
+                                                Nueva-Chicago
+                                            </td>
+                                            <td>36</td>
+                                            <td>13</td>
+                                            <td>13</td>
+                                            <td>10</td>
+                                            <td>34</td>
+                                            <td>25</td>
+                                            <td>+9</td>
+                                            <td>52</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Defensores-de-Belgrano.png') }}"
+                                                    alt=""
+                                                />
+                                                Defensores de Belgrano
+                                            </td>
+                                            <td>36</td>
+                                            <td>14</td>
+                                            <td>8</td>
+                                            <td>13</td>
+                                            <td>43</td>
+                                            <td>35</td>
+                                            <td>+8</td>
+                                            <td>50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Defensores-Unidos.png') }}"
+                                                    alt=""
+                                                />
+                                                Defensores Unidos
+                                            </td>
+                                            <td>36</td>
+                                            <td>12</td>
+                                            <td>11</td>
+                                            <td>13</td>
+                                            <td>30</td>
+                                            <td>31</td>
+                                            <td>-1</td>
+                                            <td>47</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Alvarado.png') }}"
+                                                    alt=""
+                                                />
+                                                Alvarado
+                                            </td>
+                                            <td>36</td>
+                                            <td>10</td>
+                                            <td>14</td>
+                                            <td>12</td>
+                                            <td>35</td>
+                                            <td>40</td>
+                                            <td>-5</td>
+                                            <td>44</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Patronato.png') }}"
+                                                    alt=""
+                                                />
+                                                Patronato
+                                            </td>
+                                            <td>36</td>
+                                            <td>11</td>
+                                            <td>9</td>
+                                            <td>16</td>
+                                            <td>39</td>
+                                            <td>44</td>
+                                            <td>-5</td>
+                                            <td>42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club All-Boys.png') }}"
+                                                    alt=""
+                                                />
+                                                All-Boys
+                                            </td>
+                                            <td>36</td>
+                                            <td>10</td>
+                                            <td>12</td>
+                                            <td>14</td>
+                                            <td>31</td>
+                                            <td>40</td>
+                                            <td>-9</td>
+                                            <td>42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Guillermo-Brown.png') }}"
+                                                    alt=""
+                                                />
+                                                Guillermo-Brown
+                                            </td>
+                                            <td>36</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>14</td>
+                                            <td>35</td>
+                                            <td>41</td>
+                                            <td>-6</td>
+                                            <td>38</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club Almagro.png') }}"
+                                                    alt=""
+                                                />
+                                                Almagro
+                                            </td>
+                                            <td>36</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>17</td>
+                                            <td>26</td>
+                                            <td>36</td>
+                                            <td>-10</td>
+                                            <td>37</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static',filename='imagenes/Club San-Telmo.png') }}"
+                                                    alt=""
+                                                />
+                                                San Telmo
+                                            </td>
+                                            <td>36</td>
+                                            <td>10</td>
+                                            <td>7</td>
+                                            <td>19</td>
+                                            <td>40</td>
+                                            <td>52</td>
+                                            <td>-12</td>
+                                            <td>37</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Flandria.png') }}"
+                                                    alt=""
+                                                />
+                                                Flandria
+                                            </td>
+                                            <td>36</td>
+                                            <td>9</td>
+                                            <td>7</td>
+                                            <td>20</td>
+                                            <td>33</td>
+                                            <td>56</td>
+                                            <td>-23</td>
+                                            <td>34</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseTwo"
+                            >
+                                <h2><b>TABLA DE POSICIONES ZONA B</b></h2>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseTwo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                <h3 class="gol">POSICIONES ZONA B</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Pos</th>
+                                            <th>Equipo</th>
+                                            <th>PJ</th>
+                                            <th>PG</th>
+                                            <th>PE</th>
+                                            <th>PP</th>
+                                            <th>GF</th>
+                                            <th>GC</th>
+                                            <th>DG</th>
+                                            <th>PTS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Independiente-Rivadavia-1.png') }}"
+                                                    alt=""
+                                                />
+                                                Independiente Rivadavia
+                                            </td>
+                                            <td>34</td>
+                                            <td>20</td>
+                                            <td>8</td>
+                                            <td>6</td>
+                                            <td>51</td>
+                                            <td>33</td>
+                                            <td>+18</td>
+                                            <td>68</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Chacarita-Juniors.png') }}"
+                                                    alt=""
+                                                />
+                                                Chacarita Juniors
+                                            </td>
+                                            <td>34</td>
+                                            <td>18</td>
+                                            <td>13</td>
+                                            <td>3</td>
+                                            <td>48</td>
+                                            <td>23</td>
+                                            <td>+25</td>
+                                            <td>67</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Deportivo-Maipu.png') }}"
+                                                    alt=""
+                                                />
+                                                Deportivo Maipú
+                                            </td>
+                                            <td>34</td>
+                                            <td>19</td>
+                                            <td>6</td>
+                                            <td>9</td>
+                                            <td>46</td>
+                                            <td>31</td>
+                                            <td>+15</td>
+                                            <td>63</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Quilmes.png') }}"
+                                                    alt=""
+                                                />
+                                                Quilmes
+                                            </td>
+                                            <td>34</td>
+                                            <td>15</td>
+                                            <td>8</td>
+                                            <td>11</td>
+                                            <td>44</td>
+                                            <td>31</td>
+                                            <td>+13</td>
+                                            <td>53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Atletico-Rafaela.png') }}"
+                                                    alt=""
+                                                />
+                                                Atlético Rafaela
+                                            </td>
+                                            <td>34</td>
+                                            <td>14</td>
+                                            <td>11</td>
+                                            <td>9</td>
+                                            <td>38</td>
+                                            <td>31</td>
+                                            <td>+7</td>
+                                            <td>53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Atletico-Mitre.png') }}"
+                                                    alt=""
+                                                />
+                                                Atlético Mitre
+                                            </td>
+                                            <td>34</td>
+                                            <td>15</td>
+                                            <td>7</td>
+                                            <td>12</td>
+                                            <td>38</td>
+                                            <td>37</td>
+                                            <td>+1</td>
+                                            <td>52</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Deportivo-Riestra-1.png') }}"
+                                                    alt=""
+                                                />
+                                                Deportivo Riestra
+                                            </td>
+                                            <td>34</td>
+                                            <td>12</td>
+                                            <td>14</td>
+                                            <td>8</td>
+                                            <td>40</td>
+                                            <td>34</td>
+                                            <td>+6</td>
+                                            <td>50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Ferro-Carril-Oeste.png') }}"
+                                                    alt=""
+                                                />
+                                                Ferro Carril Oeste
+                                            </td>
+                                            <td>34</td>
+                                            <td>13</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>45</td>
+                                            <td>37</td>
+                                            <td>+8</td>
+                                            <td>49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Brown-de-Adrogue.png') }}"
+                                                    alt=""
+                                                />
+                                                Brown-de-Adrogué
+                                            </td>
+                                            <td>34</td>
+                                            <td>11</td>
+                                            <td>14</td>
+                                            <td>9</td>
+                                            <td>34</td>
+                                            <td>31</td>
+                                            <td>+3</td>
+                                            <td>47</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Gimnasia-Jujuy.png') }}"
+                                                    alt=""
+                                                />
+                                                Gimnasia Jujuy
+                                            </td>
+                                            <td>34</td>
+                                            <td>13</td>
+                                            <td>5</td>
+                                            <td>16</td>
+                                            <td>36</td>
+                                            <td>40</td>
+                                            <td>-4</td>
+                                            <td>44</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Deportivo-Madryn.jpg') }}"
+                                                    alt=""
+                                                />
+                                                Deportivo Madryn
+                                            </td>
+                                            <td>34</td>
+                                            <td>10</td>
+                                            <td>13</td>
+                                            <td>11</td>
+                                            <td>28</td>
+                                            <td>28</td>
+                                            <td>+0</td>
+                                            <td>43</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Racing-de-Cordoba.png') }}"
+                                                    alt=""
+                                                />
+                                                Racing de Córdoba
+                                            </td>
+                                            <td>34</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>13</td>
+                                            <td>44</td>
+                                            <td>43</td>
+                                            <td>+1</td>
+                                            <td>41</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Chaco-For-Ever.png') }}"
+                                                    alt=""
+                                                />
+                                                Chaco For Ever
+                                            </td>
+                                            <td>34</td>
+                                            <td>11</td>
+                                            <td>7</td>
+                                            <td>16</td>
+                                            <td>30</td>
+                                            <td>43</td>
+                                            <td>-13</td>
+                                            <td>40</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Estudiantes-de-Caseros.png') }}"
+                                                    alt=""
+                                                />
+                                                Estudiantes de Caseros
+                                            </td>
+                                            <td>34</td>
+                                            <td>8</td>
+                                            <td>12</td>
+                                            <td>14</td>
+                                            <td>31</td>
+                                            <td>40</td>
+                                            <td>-9</td>
+                                            <td>36</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Atlanta.png') }}"
+                                                    alt=""
+                                                />
+                                                Atlanta
+                                            </td>
+                                            <td>34</td>
+                                            <td>18</td>
+                                            <td>11</td>
+                                            <td>15</td>
+                                            <td>33</td>
+                                            <td>41</td>
+                                            <td>-8</td>
+                                            <td>35</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Aldosivi.png') }}"
+                                                    alt=""
+                                                />
+                                                Aldosivi
+                                            </td>
+                                            <td>34</td>
+                                            <td>8</td>
+                                            <td>11</td>
+                                            <td>15</td>
+                                            <td>33</td>
+                                            <td>44</td>
+                                            <td>-11</td>
+                                            <td>35</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Tristan-Suarez.png') }}"
+                                                    alt=""
+                                                />
+                                                Tristán Suárez
+                                            </td>
+                                            <td>34</td>
+                                            <td>8</td>
+                                            <td>10</td>
+                                            <td>16</td>
+                                            <td>36</td>
+                                            <td>53</td>
+                                            <td>-17</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Villa-Dalmine.png') }}"
+                                                    alt=""
+                                                />
+                                                Villa Dálmine
+                                            </td>
+                                            <td>34</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>24</td>
+                                            <td>21</td>
+                                            <td>56</td>
+                                            <td>-35</td>
+                                            <td>20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseThree"
+                            >
+                                <h2><b>TABLA DE GOLEADORES</b></h2>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseThree"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                <h3 class="gol">GOLEADORES</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Posición</th>
+                                            <th>Jugador</th>
+                                            <th>Equipo</th>
+                                            <th>Goles</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>A. Arce</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Independiente-Rivadavia-1.png') }}"
+                                                    alt=""
+                                                />
+                                                IndependienteRivadavia
+                                            </td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>C. Benegas</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Defensores-de-Belgrano.png') }}"
+                                                    alt=""
+                                                />
+                                                Defensores de Belgrano
+                                            </td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>C. Romero</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Deportivo-Riestra-1.png') }}"
+                                                    alt=""
+                                                />
+                                                Deportivo Riestra
+                                            </td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>L. González</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Deportivo-Madryn.jpg') }}"
+                                                    alt=""
+                                                />
+                                                Deportivo Madryn
+                                            </td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>C. Bieler</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Atletico-Rafaela.png') }}"
+                                                    alt=""
+                                                />
+                                                Atlético Rafaela
+                                            </td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>E. Melo</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Agropecuario.png') }}"
+                                                    alt=""
+                                                />
+                                                Agropecuario
+                                            </td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>M. Pino</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Guillermo-Brown.png') }}"
+                                                    alt=""
+                                                />
+                                                Guillermo Brown
+                                            </td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>F. Coronel</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Racing-de-Cordoba.png') }}"
+                                                    alt=""
+                                                />
+                                                Racing de Córdoba
+                                            </td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>L. Giménez</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Chacarita-Juniors.png') }}"
+                                                    alt=""
+                                                />
+                                                Chacarita Juniors
+                                            </td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>N. Romero</td>
+                                            <td>
+                                                <img
+                                                    src="{{ url_for('static', filename='imagenes/Club Atletico-Mitre.png') }}"
+                                                    alt=""
+                                                />
+                                                Atlético Mitre
+                                            </td>
+                                            <td>12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>DERECHOS RESERVADOS</p>
+            <p>TRABAJO PRÁCTICO EXAMEN FINAL</p>
+            <p>MARCELO ALLEGRINI</p>
+            <div class="boton">
+                <button><a href="{{ url_for('login') }}">LOGIN</a></button>
+                <button>
+                    <a href="{{ url_for('registro') }}">REGISTRARSE</a>
+                </button>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

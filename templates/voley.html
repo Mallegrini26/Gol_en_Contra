@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VÓLEY</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/voley.css') }}"
+        />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="imagenes/x-icon"
+            href="{{ url_for('static', filename='imagenes/pelota de futbol.jpg') }}"
+        />
+    </head>
+    <body>
+        <header>
+            <img
+                class="img-logo"
+                src="{{ url_for('static',filename='imagenes/Logo Pelota de Voley.png') }}"
+                alt=""
+            />
+            <h1>VÓLEY</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">INICIO</a></li>
+                <li><a href="#seccion1">VÓLEY MASCULINO</a></li>
+                <li><a href="#seccion2">VÓLEY FEMENINO</a></li>
+                <li><a href="#seccion3">TABLA DE POSICIONES</a></li>
+            </ul>
+        </nav>
+        <!--MAIN-->
+        <h2 id="seccion1" class="titulo">NOTICIAS DEL VÓLEY MASCULINO</h2>
+        <main>
+            <div class="contenedor">
+                <div class="contenedor-0">
+                    <h5 class="h5-1">JUEGOS PANAMERICANOS</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Masculino 1.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            ARGENTINA LOGRÓ LA PRIMERA MEDALLA DE PLATA EN VÓLEY
+                            MASCULINO El combinado masculino cayó 3-0 en la
+                            final de los Juegos Panamericanos ante Brasil.
+                            ARGENTINA obtuvo la medalla de plata en vóley al
+                            caer esta noche con Brasil por 3-0 en la final de
+                            los Juegos Panamericanos Santiago de Chile 2023. El
+                            equipo que dirige Martín López disputó un primer set
+                            parejo en el Arena Parque O'Higgins, donde cayó por
+                            25-23, pero el conjunto brasileño mostró su
+                            potencial en los parciales siguientes y se impuso
+                            por 25-13 y 25-22. Los máximos anotadores del equipo
+                            nacional fueron el opuesto sanjuanino Bruno Lima, de
+                            gran torneo, con 12 puntos, seguido por el punta
+                            receptor Facundo Conte, con 10. Así, Argentina no
+                            pudo repetir las preseas doradas conseguidas en los
+                            Panamericanos de Toronto 2015 y Lima 2019, aunque
+                            consiguió su primera medalla plateada en el
+                            certamen. Completó el podio de la disciplina el
+                            equipo colombiano, que superó hoy a Cuba por 3-1, en
+                            tanto que República Dominicana alcanzó el 5to. lugar
+                            tras vencer a México por 3-1, y el local Chile quedó
+                            7mo. luego de la victoria sobre Puerto Rico en sets
+                            corridos.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-2">PREOLÍMPICO DE VÓLEY</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Masculino 2.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            ARGENTINA TERMINÓ EL PREOLÍMPICO DE VÓLEY CON UN
+                            TRIUNFO Y ESPERA UN GUIÑO DEL RANKING Venció 3-0 a
+                            Países Bajos y aunque no se clasificó para París
+                            2024, aún tiene posibilidades de ingresar. LA
+                            SELECCIÓN ARGENTINA DE VÓLEY cerró con una gran
+                            actuación su faena en el Preolímpico de China.
+                            Barrió este domingo a Países Bajos por 3-0 (25-17,
+                            27-25 y 25-22), con 14 puntos de Pablo Kukartsev. Y
+                            si bien no logró el boleto a París 2024, tiene
+                            posibilidades de acceder a la cita por el sexto
+                            lugar que ocupa en el ranking FIVB. Con sus 5
+                            victorias y 2 derrotas no le alcanzó para concretar
+                            el objetivo. Las dos plazas en juego en su grupo las
+                            obtuvieron Polonia y Canadá. Pero será determinante
+                            la actuación del conjunto nacional en la Nations
+                            League del año próximo. Después de los seis que se
+                            clasifiquen a través del Preolímpico más el
+                            anfitrión, Francia, quedarán cinco lugares
+                            disponibles, de los cuales uno será para África,
+                            debe haber un país por continente. Los cuatro
+                            restantes se clasificarán por ranking FIVB al
+                            finalizar la fase regular de la mencionada Nations
+                            League. Argentina tiene por encima en el ranking a
+                            selecciones ya clasificadas, salvo Brasil e Italia.
+                            Por debajo se encuentran Eslovenia (8°) y Serbia
+                            (9°), porque Francia (7°) y Alemania (10°) ya se
+                            clasificaron. Entonces si la Albiceleste termina la
+                            Nations League 2024 dentro de los 10 mejores del
+                            ranking, habrá logrado el tan ansiado ticket a la
+                            competencia olímpica.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-3">SUDAMERICANO DE VÓLEY</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Masculino 3.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            ARGENTINA VENCIÓ A PERÚ EN EL SUDAMERICANO DE VÓLEY
+                            EN RECIFE El seleccionado argentino masculino de
+                            vóley ganó por 3-1 y definirá el título con Brasil.
+                            La Selección nacional de vóley superó a Perú y
+                            jugará la final del Sudamericano con el local
+                            Brasil, en el marco del certamen que se lleva a cabo
+                            en la ciudad de Recife. El equipo dirigido por el DT
+                            Marcelo Méndez se impuso con parciales de 25-16,
+                            20-25, 25-9 y 25-18. El conjunto albiceleste no tuvo
+                            a disposición a Agustín Loser ni a Ezequiel
+                            Palacios, quienes fueron preservados para la gran
+                            final. Bruno Lima y Facundo Conte anotaron 15 tantos
+                            cada uno y fueron los goleadores del seleccionado.
+                            Con este triunfo, Argentina se mantiene invicto en
+                            la competencia continental, al acumular dos triunfos
+                            3-0 en los primeros dos partidos: 25-16, 25-15 y
+                            25-22 a Colombia; más 25-19, 25-20 y 25-15 sobre
+                            Chile.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-4">MUNDIAL SUB 21 DE VÓLEY</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Masculino 4.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            ARGENTINA LOGRÓ UN TRIUNFO HISTÓRICO ANTE BRASIL EN
+                            EL MUNDIAL SUB 21 DE VÓLEY El seleccionado masculino
+                            se quedó con el clásico por 3 a 0 y se clasificó a
+                            las semifinales del certamen que se disputa en
+                            Bahréin, donde el sábado se medirá con Irán.
+                            ARGENTINA, que venía de caer 3-0 ante Italia y de
+                            superar 3-2 a Bélgica por el grupo F, se impuso a su
+                            rival clásico sudamericano con parciales de 25-23,
+                            25-23 y 25-18 con 14 puntos de Germán Gómez. El
+                            sábado, a las 14 (hora argentina), el equipo
+                            dirigido por Sebastián Fernández enfrentará a Irán
+                            por un lugar en la final. La otra semifinal será
+                            entre Italia y Bulgaria. En lo que va del torneo,
+                            Argentina logró victorias sobre Estados Unidos
+                            (3-0), República Checa (3-1) y Bélgica (3-2) en la
+                            primera ronda; y en la segunda sólo cayó ante los
+                            italianos y luego superó a Bélgica y Brasil.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-5">LIGA ARGENTINA DE VÓLEY</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Masculino 5.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            CIUDAD VOLEY SE CORONÓ POR PRIMERA VEZ EN LA LIGA
+                            ARGENTINA El equipo liderado por Facundo Conte tuvo
+                            su revancha ante UPCN de San Juan, su verdugo en las
+                            últimas dos finales, y lo derrotó con un 3-0
+                            contundente en el global de la serie. CIUDADVOLEY se
+                            consagró por primera vez campeón de la Liga de
+                            Voleibol Argentina (LVA), tras ganarle como
+                            visitante la serie final a UPCN de San Juan, su
+                            verdugo en la definición de las dos temporadas
+                            anteriores. El club porteño, liderado por Facundo
+                            Conte, se impuso en el tercer juego por 3-1, con
+                            parciales de 29-27, 27-25, 23-25, 25-22, y colocó el
+                            marcador global en un decisivo 3-0 a su favor. Con
+                            esta victoria, Conte, medalla de bronce en los
+                            Juegos Olímpicos Tokio 2020, celebró su primer
+                            título en el vóleibol nacional en su regreso al país
+                            después de una década en los clubes del exterior.
+                            "Vine a Ciudad a cumplir un sueño y estoy muy feliz
+                            de poder alcanzarlo. Salir campeón de la Liga por
+                            primera vez es increíble", valoró el receptor del
+                            seleccionado argentino, quien fue campeón en Italia,
+                            China, Brasil y Polonia. El heredero fue elegido
+                            como el mejor jugador del partido y marcó 21 puntos.
+                            Y el máximo anotador del partido fue Vicente
+                            Parraguirre, con 23. Ciudad es el undécimo campeón
+                            de la Liga Argentina masculina después de UPCN, con
+                            9 títulos, Bolívar Vóley, Club de Amigos, Social
+                            Monteros, Rojas Scholem, Azul Vóley, Náutico Hacoaj,
+                            River Plate, Luz y Fuerza y Peñarol.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-6">NATIONS LEAGUE DE VÓLEY</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Masculino 6.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            GRAN TRIUNFO DE ARGENTINA EN LA NATIONS LEAGUE DE
+                            VÓLEY El Seleccionado Albiceleste se impuso a Países
+                            Bajos por 3 a 2 y abrochó su tercera victoria en
+                            cuatro partidos en la primera semana de la
+                            competencia. LA SELECCIÓN ARGENTINA DE VÓLEY vive un
+                            presente fenomenal en la Nations League que se
+                            coronó este domingo con el triunfo ante Países Bajos
+                            por 3 a 2, con parciales de (34-36, 25-20, 25-17,
+                            20-25 y 15-10). El partido se definió en el quinto
+                            set y la gran figura fue Pablo Kukartsev, que
+                            concretó 25 puntos. De este modo, el conjunto
+                            dirigido por Marcelo Méndez cerró una semana muy
+                            positiva en Canadá, que se inició el martes con el
+                            éxito ante Italia, continuó el jueves con la derrota
+                            frente a Brasil, y después tuvo dos victorias en los
+                            duelos con Canadá, el viernes, y el mencionado de
+                            este domingo con Países Bajos. Se trata del mejor
+                            arranque de la historia en esta competición, en la
+                            que obtuvo 9 de 12 puntos en disputa. El equipo
+                            masculino de la Argentina, medalla de bronce en los
+                            Juegos Olímpicos Tokio 2020, continuará su
+                            participación en la Nations League desde el martes
+                            20 de junio con una gira por Orleans, Francia, en la
+                            que enfrentará a Eslovenia, al seleccionado local,
+                            Bulgaria y Japón.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2 id="seccion2" class="titulo">NOTICIAS DEL VÓLEY FEMENINO</h2>
+            <div class="contenedor">
+                <div class="contenedor-0">
+                    <h5 class="h5-7">JUEGOS PANAMERICANOS</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Femenino 1.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            LAS PANTERAS CAYERON ANTE REPÚBLICA DOMINICANA E
+                            IRÁN POR EL BRONCE Argentina perdió 3-1 en vóley
+                            femenino y buscará ante México subirse al podio de
+                            los Juegos Panamericanos. LAS PANTERAS perdieron
+                            este miércoles ante su par de República Dominicana
+                            por 3-1, con parciales de 16-25, 25-19, 25-20 y
+                            25-17, en partido correspondiente a las semifinales
+                            de los Juegos Panamericanos de Santiago de Chile
+                            2023. De esta manera, el equipo dirigido por Daniel
+                            Castellani intentará repetir la medalla de bronce
+                            lograda en Lima 2019 cuando se enfrente este jueves
+                            a las 17 ante México, que cayó ante Brasil. Con la
+                            punta receptora Daniela Bulaich como máxima
+                            anotadora con 13 puntos, el conjunto albiceleste
+                            tuvo un alentador comienzo, al quedarse con el
+                            primer set. Sin embargo, las dominicanas, ganadoras
+                            del oro en Lima y octavas en el ranking de la
+                            Federación Internacional de Vóleibol, demostraron su
+                            jerarquía y se quedaron con los tres parciales
+                            siguientes. El seleccionado argentino formó con
+                            María Luz Cosulich (3), María de la Paz Corbalán
+                            (11), Daniela Bulaich (13), Candela Salinas (8),
+                            Bianca Farriol (11) y Avril García (8); líbero:
+                            Tatiana Rizzo (1). Ingresaron: Agostina Pelozo, Zoe
+                            Studer, Daiana López (2), Tatiana Vera y Nicole
+                            Pérez (1).
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-8">PREOLÍMPICO DE TOKIO</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Femenino 2.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            LAS PANTERAS NO PUDIERON CONTRA BRASIL EN SU DEBUT
+                            EN EL PREOLÍMPICO DE TOKIO La Selección Argentina
+                            femenina de vóley no pudo en el inicio del certamen
+                            que reparte dos plazas para París 2024. LAS PANTERAS
+                            cayeron en su debut en el Preolímpico de Tokio,
+                            Japón, que reparte dos plazas para los Juegos
+                            Olímpicos de Paris 2024 entre ocho equipos. El
+                            seleccionado argentino femenino de vóleibol perdió
+                            ante Brasil por 3-0, con parciales de 25-17, 25-20 y
+                            25-22, en un partido en el que fue de menor a mayor
+                            contra las brasileñas. La central sanjuanina
+                            Candelaria Herrera tuvo una actuación destacada y
+                            fue la máxima anotadora argentina con 15 puntos. La
+                            goleadora del partido fue la opuesta de Brasil, Kisy
+                            Nascimiento, con 16. Este domingo, a las 7.25, Las
+                            Panteras se enfrentarán al local Japón en el segundo
+                            partido del torneo, en el que participan también
+                            Bélgica, Turquía, Puerto Rico, Bulgaria y Perú.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-9">COPA PANAMERICANA</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Femenino 3.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            ¡LAS PANTERAS, CAMPEONAS DE LA COPA PANAMERICANA POR
+                            PRIMERA VEZ! El seleccionado argentino de vóley
+                            logró un triunfo histórico ante Puerto Rico para
+                            quedarse con el título. LAS PANTERAS volvieron a
+                            anotar su nombre en la historia del deporte
+                            argentino. Por primera vez, se consagraron campeonas
+                            de la Copa Panamericana al vencer 3-2 a Puerto Rico.
+                            Todas las jugadoras del Seleccionado Argentino de
+                            Voley recordarán la noche del 13 de agosto como
+                            alegre pero intensa, dado que para llevarse la
+                            victoria tuvieron que saber sufrir en un juego de
+                            cinco sets. Los parciales fueron de 25-17, 25-22,
+                            23-25, 19-25 y 15-6. Con este resultado, la
+                            Albiceleste se mete en el ranking de campeones,
+                            liderado por Estados Unidos, con 7 títulos.
+                        </p>
+                    </div>
+                </div>
+                <div class="contenedor-0">
+                    <h5 class="h5-10">JUEGOS ODESUR</h5>
+                    <div class="contenedor1">
+                        <img
+                            class="img1"
+                            src="{{ url_for('static',filename='imagenes/Voley Femenino 4.jfif') }}"
+                            alt=""
+                        />
+                        <p class="texto">
+                            LAS PANTERAS VENCIERON A CHILE Y ESTÁN EN LA FINAL
+                            DE LOS JUEGOS ODESUR La Selección femenina de vóley
+                            se aseguró una medalla luego del triunfo 3-0 y
+                            definirá el título suramericano este viernes en
+                            Asunción. LAS PANTERAS, la Selección Argentina de
+                            vóley femenino, vencieron este jueves a Chile por 3
+                            a 0 (25-16, 25-19 y 25-21) y avanzaron a la final de
+                            los Juegos Suramericanos en Asunción, Paraguay, en
+                            la que se medirá frente a Perú. Con 14 puntos de
+                            Nicole Pérez, la máxima anotadora argentina, Las
+                            Panteras ganaron en 1 hora y 23 minutos de juego e
+                            irán por la medalla de oro frente a Perú, que en la
+                            segunda semifinal derrotó a Colombia por 3 a 0
+                            (25-14, 25-14 y 25-17). La final se jugará este
+                            viernes a las 19.48. Las argentinas, dirigidas por
+                            Marcelo Silva, formaron con Luz Cosulich (2 puntos),
+                            María de la Paz Corbalán (11), Avril García (7),
+                            Marlen Siri (10), Nicole Pérez (14), Guadalupe
+                            Martín (6). Líbero: Valentina González. Ingresaron
+                            Julieta Aruga, Valentina Vaulet (5) y Camila
+                            Giraudo. Las Panteras están invictas en el torneo
+                            luego de las victorias consecutivas frente a las
+                            Selecciones de Bolivia, Colombia y Chile, todas sin
+                            ceder sets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2 id="seccion3" class="titulo">
+                TABLA DE POSICIONES VOLEY MASCULINO
+            </h2>
+            <h4 class="titulo-1">FASE REGULAR</h4>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Equipo</th>
+                            <th>PTS</th>
+                            <th>PG</th>
+                            <th>PP</th>
+                            <th>PJ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo Ciudad Voley.png') }}"
+                                    alt=""
+                                />
+                                Ciudad Voley
+                            </td>
+                            <td>24</td>
+                            <td>8</td>
+                            <td>1</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo Policial Voley.png') }}"
+                                    alt=""
+                                />
+                                Policial Voley
+                            </td>
+                            <td>19</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo UPCN San Juan Voley Club.png') }}"
+                                    alt=""
+                                />
+                                UPCN San Juan Voley Club
+                            </td>
+                            <td>18</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo Monteros Voley Club.png') }}"
+                                    alt=""
+                                />
+                                Monteros Vóley Club
+                            </td>
+                            <td>14</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo Boca Juniors.png') }}"
+                                    alt=""
+                                />
+                                Boca Juniors
+                            </td>
+                            <td>13</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo San Lorenzo.png') }}"
+                                    alt=""
+                                />
+                                San Lorenzo
+                            </td>
+                            <td>12</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo Defensores de Banfiel.png') }}"
+                                    alt=""
+                                />
+                                Defensores de Banfield
+                            </td>
+                            <td>12</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo Once Unidos.png') }}"
+                                    alt=""
+                                />
+                                Once Unidos
+                            </td>
+                            <td>11</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo River Plate.png') }}"
+                                    alt=""
+                                />
+                                River Plate
+                            </td>
+                            <td>8</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo Club Tucuman de Gimnasia.png') }}"
+                                    alt=""
+                                />
+                                Club Tucumán de Gimnasia
+                            </td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>
+                                <img
+                                    class="escudo"
+                                    src="{{ url_for('static',filename='imagenes/Voley Escudo Obras de San Juan.png') }}"
+                                    alt=""
+                                />
+                                Obras de San Juan
+                            </td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <div class="boton">
+            <button><a href="">IR ARRIBA</a></button>
+        </div>
+        <footer>
+            <p>DERECHOS RESERVADOS</p>
+            <p>TRABAJO PRÁCTICO EXAMEN FINAL</p>
+            <p>MARCELO ALLEGRINI</p>
+            <div class="boton">
+                <button><a href="{{ url_for('login') }}">LOGIN</a></button>
+                <button>
+                    <a href="{{ url_for('registro') }}">REGISTRARSE</a>
+                </button>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

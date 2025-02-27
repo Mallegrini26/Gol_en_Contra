@@ -1,0 +1,400 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+}
+.logo{
+    margin-top: 10px;
+	border-radius: 20px;
+	width: 100px;
+	height: 100px;
+	animation-name: logo;
+	animation-duration: 4s;
+	position: relative;
+	animation-direction: reverse;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 4;
+}
+@keyframes logo {
+	0%{
+			left: 0px; lef: 300px;}
+	25%{left: 300px; left: 500px;}
+	50%{left: 500px; left: 800px;}
+	75%{left: 800px; left: 1100px;}
+	100%{right: 1100px; right: 0px; }
+}
+header h1{
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 2px blue, 2px 2px 2px blue;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+header, nav{
+    animation-duration: 3s;
+    animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+        from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    
+        to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 2px blue, 2px 2px 2px blue;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+h5{
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 2px blue, 2px 2px 2px blue;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.div-sol{
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.img-sol{
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+.img-sol:hover{
+    background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+}
+.mundial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img-mundial{
+	width: 80%;
+	height: 550px;
+}
+.tabla{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+table{
+    text-align: center;
+    margin: 10px;
+    padding: 4px;
+    border: 1px solid rgb(94, 13, 13);
+    border-collapse: collapse;
+}
+td{
+    padding: 10px;
+    border: 1px solid black;
+}
+th{
+    padding: 10px;
+    border: 1px solid black;
+}
+thead{
+    background-color: black;
+    color: white; 
+}
+tbody tr:nth-child(2n):hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+tbody tr:nth-child(2n+1):hover{
+    background-color: rgb(20, 13, 94);
+    color: white;
+    cursor: all-scroll;
+}
+nav{
+	background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+    border: 1px solid black;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;      
+}
+nav ul li{
+    background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 40px;
+    width: 250px;
+    font-family: 'Dancing Script', cursive;
+    list-style: none;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+nav ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.contenedor2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor3{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+}
+.img1{
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+}
+.contenedor4{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.contenedor5{
+	border-radius: 10px;
+    border: 1px solid black;
+    width: 610px;
+    height: 400px;
+    margin: 30px;
+}
+.img2{
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 610px;
+    height: 400px;
+}
+.maradona{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.maradona-1{
+    border: 2px solid black;
+    color: black;
+    width: 800px;
+    height: 600px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.maradona-1:hover{
+    background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+    border: 2px solid  rgb(58, 42, 233);
+    width: 900px;
+    height: 700px;
+}
+.img-maradona{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    float: right;
+    margin: 10px;
+}
+.maradona-2{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.maradona-3{
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.img-diego{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+.messi{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.messi-1{
+    border: 2px solid black;
+    color: black;
+    width: 800px;
+    height: 600px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.messi-1:hover{
+    background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+    border: 2px solid  rgb(58, 42, 233);
+    width: 900px;
+    height: 700px;
+}
+.img-leo{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    float: right;
+    margin: 10px;
+}
+.messi-2{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.messi-3{
+    border: 2px solid black;
+    width: 610px;
+    height: 600px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.img-leo-messi1{
+    width: 610px;
+    height: 600px;
+    border-radius: 5px;
+
+}
+.messi-4{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.messi-5{
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.img-leo-messi{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+.boton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.encabezado{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+.parrafo{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+.parrafo-1{
+    font-family: 'Dancing Script', cursive;
+    padding: 15px;
+}
+.img-5{
+    margin: 10px;
+    float: right;
+}
+footer{
+    border: 1px solid black;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+}
+footer p{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px blue, 2px 2px 2px blue;
+    font-family: 'Dancing Script', cursive;
+}
+.boton button{
+    background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+    border: 2px solid black;
+    height: 40px;
+    width: 250px;
+    padding: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.boton button:hover{
+    background-image: linear-gradient(to right, rgb(75, 134, 229), white,  rgb(75, 134, 229) );
+}
+.boton a{
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.boton a:hover{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 4px 4px 4px black;
+}
+
+
+
+@media (max-width: 768px) {
+    .img-logo{
+        width: 70px;
+        height: 70px;
+    }
+    @keyframes logo {
+        0%{
+            left: 10px; lef: 100px;}
+        25%{left: 100px; left: 300px;}
+        50%{left: 300px; left: 400px;}
+        75%{left: 400px; left: 645px;}
+        100%{right: 645px; right: 0px; }
+    }
+    nav{
+        height: 230px;
+    }
+    nav ul li{
+		margin-right: 30px;
+    }
+    .img-mundial{
+        width: 80%;
+        height: 350px;
+    }
+}

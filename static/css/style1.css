@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom left, rgb(51, 240, 51), rgb(1, 4, 15), rgb(51, 240, 51) );
+}
+.img-logo{
+    width: 100px;
+    height: 100px;
+    animation-name: logo;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 4;
+}
+@keyframes logo {
+    0%{
+        left: 0px; lef: 300px;}
+    25%{left: 300px; left: 500px;}
+    50%{left: 500px; left: 800px;}
+    75%{left: 800px; left: 1100px;}
+    100%{right: 1100px; right: 0px; }
+}
+.titulo{
+    text-align: center;
+    font-size: 60px;
+    padding: 10px;
+    letter-spacing: 20px;
+    color: white;
+    font-family:'Permanent+Marker';
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+}
+.titulo:hover{
+    color: white;
+    text-shadow: 10px 4px 4px black;
+    letter-spacing: 40px;
+}
+
+.titulo{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+  
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+header h4{
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 20px;
+}
+header h4:hover{
+    letter-spacing: 20px;
+    color: white;
+    text-shadow: 6px 2px 4px black;
+}
+header h4{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+.cerrar_sesion{
+    background-color: white;
+    border: 2px solid black;
+    height: 40px;
+    width: 300px;
+    padding: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+
+}
+.foto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.img-foto{
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img-foto:hover{
+    width: 130px;
+    box-shadow: 10px 5px 5px black;
+}
+.boton-cs{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boton-cs button{
+    background-color: white;
+    border: 2px solid black;
+    height: 60px;
+    width: 100px;
+    padding: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.boton-cs button:hover{
+    background-image: linear-gradient(to bottom left, rgb(51, 240, 51), rgb(1, 4, 15), rgb(51, 240, 51) );
+}
+.boton-cs a{
+    text-decoration: none;
+    color: rgb(51, 240, 51);
+    border-radius: 5px;
+    padding: 5px;
+}
+.boton-cs a:hover{
+    text-decoration: none;
+    color: rgb(51, 240, 51);
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+nav{
+    background-image: linear-gradient(to bottom left, rgb(51, 240, 51), rgb(1, 4, 15), rgb(51, 240, 51) );
+    border: 1px solid black;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+
+}
+nav{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 300%;
+    }
+
+    to {
+    margin-left: 0%;
+    width: 100%;
+    }
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;      
+}
+nav ul li{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 40px;
+    width: 250px;
+    font-family:'Permanent+Marker';
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+nav li:hover{
+    background-image: linear-gradient(to bottom left, rgb(51, 240, 51), rgb(1, 4, 15), rgb(51, 240, 51) );
+}
+nav ul li a{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(51, 240, 51);
+}
+nav ul li a:hover{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom left, rgb(51, 240, 51), rgb(1, 4, 15), rgb(51, 240, 51) );
+    border: 2px solid black;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+
+}
+.slider ul{
+    display: flex;
+    /* se puede poner (infinite) para q nunca pare de pasar las imagenes de los ecudos de los 
+    equipos en el slider*/
+    animation: cambio 20s linear infinite;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+@keyframes cambio{
+    0%{margin-left: -0%;}
+    100%{margin-left: -230%;}
+}
+.titulo-2{
+    margin-top: 30px;
+    font-family:'Permanent+Marker';
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 6px 2px 4px black;
+    color: white;
+}
+.titulo-2:hover{
+    color: white;
+    text-shadow: 10px 4px 4px black;
+    letter-spacing: 40px;
+}
+.contenedor{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div-1{
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+}
+.div-1 p{
+    font-family:'Permanent+Marker';
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+.img1{
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+
+}
+.boton{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boton button{
+    background-color: white;
+    border: 2px solid black;
+    height: 40px;
+    width: 300px;
+    padding: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.boton button:hover{
+    background-image: linear-gradient(to bottom left, rgb(51, 240, 51), rgb(1, 4, 15), rgb(51, 240, 51) );
+}
+.boton a{
+    text-decoration: none;
+    color: rgb(51, 240, 51);
+    border-radius: 5px;
+    padding: 5px;
+}
+.boton a:hover{
+    text-decoration: none;
+    color: rgb(51, 240, 51);
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+.div-boca{
+    width: 100%;
+    height: 830px;
+}
+.img-boca{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.texto{
+    font-family:'Permanent+Marker';
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+
+}
+.parrafo{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    font-family:'Permanent+Marker';
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
+}
+footer{
+    border: 1px solid black;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to bottom left, rgb(51, 240, 51), rgb(1, 4, 15), rgb(51, 240, 51) );
+}
+footer p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px black;
+    font-family:'Permanent+Marker';
+}
+.boton{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.boton button{
+    background-color: white;
+    border: 2px solid black;
+    height: 40px;
+    width: 250px;
+    padding: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.boton button:hover{
+    background-image: linear-gradient(to bottom left, rgb(51, 240, 51), rgb(1, 4, 15), rgb(51, 240, 51) );
+}
+.boton a{
+    text-decoration: none;
+    color: rgb(51, 240, 51);
+    border-radius: 5px;
+    padding: 5px;
+}
+.boton a:hover{
+    text-decoration: none;
+    color: rgb(51, 240, 51);
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 4px 4px 4px black;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .img-logo{
+        width: 70px;
+        height: 70px;
+    }
+    @keyframes logo {
+        0%{
+            left: 0px; lef: 100px;}
+        25%{left: 100px; left: 300px;}
+        50%{left: 300px; left: 400px;}
+        75%{left: 400px; left: 650px;}
+        100%{right: 650px; right: 0px; }
+    }
+    nav{
+        height: 300px;
+    }
+    nav ul li{
+		margin-right: 30px;
+    }
+    .slider img{
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    @keyframes cambio{
+        0%{margin-left: -0%;}
+        100%{margin-left: -210%;}
+    
+    } 
+    .boton-cs button{
+        width: 100px;
+        height: 60px;
+    }
+    .slider{
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+    } 
+    .div-boca{
+        height: 870px;
+    }
+    .img-boca{
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 430px){
+    .img-logo{
+        width: 50px;
+        height: 50px;
+    }
+    @keyframes logo {
+        0%{
+            left: 0px; lef: 100px;}
+        25%{left: 100px; left: 200px;}
+        50%{left: 200px; left: 300px;}
+        75%{left: 300px; left: 360px;}
+        100%{right: 360px; right: 0px; }
+    }
+    .boton-cs button{
+        width: 100px;
+        height: 60px;
+    }
+    .titulo{
+        font-size: 50px;
+        text-shadow: 6px 2px 4px black;
+        margin-left: 15px;
+    }
+    .titulo:hover{
+        text-shadow: 6px 2px 4px black;
+        letter-spacing: 30px;
+        margin-left: 15px;
+    }
+    nav{
+        height: 520px;
+        margin-bottom: 20px;
+    }
+    nav ul li{
+        width: 300px;
+		margin-right: 30px;
+    }
+    .slider img{
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    @keyframes cambio{
+        0%{margin-left: -0%;}
+        100%{margin-left: -370%;}
+    
+    } 
+    .slider{
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(to bottom left, rgb(20, 28, 28), white, rgb(20, 28, 28));
+        border: 2px solid black;
+        width: 100%;
+        height: 80px;
+        overflow: hidden;
+    } 
+    .titulo-2:hover{
+        color: white;
+        text-shadow: 4px 2px 2px black;
+        letter-spacing: 5px;
+    }
+    .div-boca{
+        height: 1150px;
+    }
+    .img-boca{
+        height: 270px;
+    }
+    footer{
+        height: 370px;
+    }
+}

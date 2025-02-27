@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BOXEO</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/boxeo2.css') }}"
+        />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="imagenes/x-icon"
+            href="{{ url_for('static', filename='imagenes/pelota de futbol.jpg') }}"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="div-boton-1">
+                <a href="{{ url_for('index') }}"
+                    ><button type="button" class="btn btn-warning">
+                        INICIO
+                    </button></a
+                >
+                <a href="{{ url_for('boxeo') }}"
+                    ><button type="button" class="btn btn-info">
+                        VOLVER
+                    </button></a
+                >
+            </div>
+            <h1 class="titulo-1">NOTICIAS DE BOXEO</h1>
+            <h2 class="h2">INFORMACIÓN BOXEO ARGENTINO</h2>
+            <div class="boxeo">
+                <h3 class="h3">
+                    BOXEO DE MIÉRCOLES EN EL LUNA PARK CON DEFENZA DE TNT
+                    MAIDANA
+                </h3>
+                <div class="boxeo1">
+                    <img
+                        class="imagenes"
+                        src="{{ url_for('static', filename='imagenes/Boxeador Fabian TNT Maidana.webp') }}"
+                        alt=""
+                    />
+                    <p class="parrafo">
+                        Fabián TNT Maidana expondrá este miércoles, un día
+                        inusual para el boxeo, su corona latina welter del
+                        Consejo Mundial de Boxeo (CMB) en una pelea con el
+                        nicaragüense Israel López, dentro de una velada que
+                        incluirá otros dos combates titulares y que se
+                        desarrollará en el estadio Luna Park. El santafesino
+                        defenderá su cetro por segunda vez tras haberse coronado
+                        en marzo pasado, cuando derrotó al ecuatoriano Edwin
+                        Bennett, precisamente en el tradicional escenario de la
+                        avenida Corrientes y Bouchard. El púgil nacido en
+                        Margarita y residente en la localidad bonaerense de José
+                        León Suárez logró una primera defensa exitosa en
+                        septiembre, cuando derrotó por nocaut técnico en el
+                        segundo round al nicaragüense Helach Rodríguez, en el
+                        gimnasio de la Federación Argentina de Box (FAB), en
+                        Almagro. TNT Maidana acredita un palmarés de 21
+                        triunfos, de los cuales 16 fueron por KO, y dos
+                        derrotas. Enfrente estará el zurdo López, con una marca
+                        de 11 victorias (8 por KO), cuatro caídas y una
+                        igualdad, que aspira al titulo mundial juvenil
+                        superligero de la Organización (OMB). El enfrentamiento
+                        central de la jornada, pautado a 10 asaltos y en el
+                        marco del festival Gloria y Honor VI, empezará cerca de
+                        las 23 y contará con la televisación de TyC Sports, que
+                        iniciará la transmisión a las 21.
+                    </p>
+                </div>
+                <h3 class="h3">
+                    El EXPLOSIVO C4 RUIZ EXPONE SUS TÍTULOS EN LA FAB
+                </h3>
+                <div class="boxeo1">
+                    <img
+                        class="imagenes"
+                        src="{{ url_for('static', filename='imagenes/Boxeador Rodrigo Ruiz.jpg') }}"
+                        alt=""
+                    />
+                    <p class="parrafo">
+                        Si el Luna Park es el templo del boxeo, el estadio de la
+                        FAB es el Teatro de los guantes, donde la acción se vive
+                        más de cerca y por momentos llega a emocionar. Este
+                        viernes se desarrollará una jornada de ésas, con la
+                        presentación del pegador tucumano Rodrigo Ruiz, que
+                        expondrá sus dos coronas. Con una cartelera expandida
+                        que comprende siete combates profesionales en el barrio
+                        de Almagro (Castro Barros 75, CABA), "C4" Ruíz
+                        (16-0-0,13 ko), de apenas 22 años, que ha sumado cuatro
+                        electrizantes victorias en lo que va del 2023 enfrenta
+                        al venezolano Maikol “La Perla Maikin” Beaumont (18-4-1,
+                        8 ko) por los títulos Latino FIB y Sudamericano
+                        supergallo a 10 rounds Con un 2023 impecable, el pegador
+                        tucumano busca entrar en los diez primeros del ranking
+                        supergallo FIB. Otra vez tendrá rival internacional:
+                        desde Venezuela, llega el ex campeón nacional y
+                        regional. Para “C4” será su primer combate como
+                        profesional en la FAB.
+                    </p>
+                </div>
+                <h3 class="h3">
+                    El IMPACTANTE KO DEL ARGENTINO LUCIANO AMAYA EN LOS JUEGOS
+                    PANAMERICANOS
+                </h3>
+                <div class="boxeo1">
+                    <img
+                        class="imagenes"
+                        src="{{ url_for('static', filename='imagenes/Boxeador Luciano Amayajpg.webp') }}"
+                        alt=""
+                    />
+                    <p class="parrafo">
+                        Si bien la apertura formal se realizará este viernes 20
+                        de octubre, la acción de los Juegos Panamericanos de
+                        Santiago ya comenzó en distintas disciplinas y lo hizo
+                        con buenos resultados para la delegación argentina. En
+                        boxeo, los dos primeros atletas nacionales salieron al
+                        cuadrilátero y ambos consiguieron un triunfo, lo que los
+                        deposita en la siguiente ronda de la competencia y que
+                        mantiene vivas sus esperanzas de llegar a los Juegos
+                        Olímpicos de París 2024. Uno de los púgiles argentinos
+                        que dijo presente fue Luciano Amaya, de 19 años, quien
+                        derrotó de manera contundente al peruano Leodan Pezo
+                        Saboya. Cuando apenas había pasado el primer minuto de
+                        la contienda, el nacido en Florencio Varela conectó un
+                        fuerte impacto al rostro de su adversario, lo que le
+                        provocó un corte en la zona del pómulo derecho que le
+                        impidió continuar con la pelea. De esta manera, el
+                        varelense se anotó un importante triunfo en su debut en
+                        un Panamericano, venciendo a un experimentado rival que
+                        fue bronce en Lima 2019 y que estuvo en los Juegos
+                        Olímpicos de Tokio. El trabajo duro y la confianza en mí
+                        mismo... Me preparé tantos meses y trajo resultados",
+                        declaró el boxeador argentino tras el triunfo. "Fue una
+                        mano, pensé en no desesperarme, en aprovechar los
+                        momentos, calcular en qué momentos entrar y en cuáles
+                        no. Son momentos que pasan, con combinación entré y sin
+                        desesperarme encontré los tiempos, y entró esa mano de
+                        vuelta. Antes de subir pensé en disfrutar el momento, en
+                        que estoy acá, en esta competencia, quería disfrutar",
+                        afirmó. El siguiente rival de Amaya será el dominicano
+                        Joshua Toussaint -que llegó como preclasificado al
+                        torneo- por los octavos de final de la categoría
+                        masculina de -63.5kg.
+                    </p>
+                </div>
+                <h2 id="seccion9" class="h2">
+                    INFOMACIÓN DE BOXEO INTERNACIONAL
+                </h2>
+                <h3 class="h3">
+                    NIKOLAI VALUEV, EX CAMPEÓN MUNDIAL PESADO DE BOXEO, SE SUMÓ
+                    AL EJÉRCITO RUSO
+                </h3>
+                <div class="boxeo1">
+                    <img
+                        class="imagenes"
+                        src="{{ url_for('static', filename='imagenes/Boxeador Valuev.jpg') }}"
+                        alt=""
+                    />
+                    <p class="parrafo">
+                        El ex boxeador es uno de los 200.000 reservistas
+                        llamados por Vladimir Putin para combatir en la Guerra
+                        de Ucrania. Valuev, de 49 años y de 2,13 metros de
+                        estatura, 146 kilos de peso, anunció al medio ruso
+                        Izvestia que se enrolará en el ejército de su país para
+                        ayudar en la guerra con Ucrania. El ex campeón fue una
+                        de las grandes figuras de los pesos pesados a finales de
+                        los 90 y principios de los 2000 antes de convertirse en
+                        monarca de los pesos pesados de la WBA. Valuev puso fin
+                        a su carrera pugilística en el año 2006 tras su derrota
+                        por decisión dividida ante el inglés David Haye, en
+                        Alemania, en una carrera en la que en 53 combates
+                        terminó con un balance de 50 victorias (34 por nocaut y
+                        apenas dos derrotas, con un combate sin decisión). Tras
+                        dejar el boxeo Valuev fue elegido diputado en la Duma,
+                        la cámara baja del parlamento ruso, en el año 2011, y
+                        desde allí ha decidido ahora alistarse en el frente. El
+                        exboxeador no es el primer deportista rusos que se
+                        enrolará en el ejército tras la llamada a los
+                        reservistas, ya que el ex futbolista Diniyar
+                        Bilyaletdinov también ha sido llamado para combatir en
+                        la Guerra de Ucrania.
+                    </p>
+                </div>
+                <h3 class="h3">TYSON FURY NOQUEÓ A WHYTE EN WEMBLEY</h3>
+                <div class="boxeo1">
+                    <img
+                        class="imagenes"
+                        src="{{ url_for('static', filename='imagenes/Boxeador Tyson Fury.jpg') }}"
+                        alt=""
+                    />
+                    <p class="parrafo">
+                        El británico retuvo su cinturón de peso pesado del
+                        Consejo Mundial de Boxeo (CMB) con un espectacular
+                        nocaut sobre su compatriota ante 94.000 espectadores.
+                        Fury electrizó a la multitud en el mítico estadio de
+                        Londres a seis de cumplirse el sexto round, la mitad de
+                        la pelea, cuando conectó un fulminante uppercut de
+                        derecha que desmoronó a su rival. "Creo que fue el mejor
+                        golpe que he podido dar en toda mi carrera profesional",
+                        aseguró durante los festejos en el ring quien alcanzó
+                        las 32 victorias (23 antes del límite) en 33
+                        presentaciones rentadas (la restante fue empate). Whyte,
+                        víctima de su tercera derrota en 31 peleas, intentó
+                        incorporarse desde la lona pero no pudo evitar el
+                        tambaleo, por lo que el árbitro Mark Lyson decretó con
+                        buen criterio el final de la pelea.
+                    </p>
+                </div>
+                <h3 class="h3">
+                    GOLOVKIN Y OTRA DEMOSTRACIÓN DE VIGENCIA A LOS 40 AÑOS
+                </h3>
+                <div class="boxeo1">
+                    <img
+                        class="imagenes"
+                        src="{{ url_for('static', filename='imagenes/Boxeador Gennady Golovkin.jpg') }}"
+                        alt=""
+                    />
+                    <p class="parrafo">
+                        El kazajo le ganó al japonés Ryota Murata en el noveno
+                        round, luego de 16 meses sin actividad, y unificó los
+                        cinturones de la Federación Internacional de Boxeo (FIB)
+                        -que ya poseía- y de la Asociación Mundial de Boxeo
+                        (AMB), en la categoría de pesos medios. Golovkin después
+                        de un inicio difícil, se rehízo mediando el combate y
+                        doblegó a Murata (subcampeón olímpico en Londres 2012)
+                        por KO en el noveno asalto, antes de que el árbitro
+                        finalizara la pelea, que se desarrolló en Saitama, al
+                        norte de Tokio, informó la agencia de noticias francesa
+                        AFP. Con esta victoria Golovkin ostenta un récord de 42
+                        triunfos (37 de ellos por KO), 1 empate y una sola
+                        derrota, ante el mexicano Saúl "Canelo" Álvarez.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>DERECHOS RESERVADOS</p>
+            <p>TRABAJO PRÁCTICO EXAMEN FINAL</p>
+            <p>MARCELO ALLEGRINI</p>
+            <div class="boton">
+                <button><a href="{{ url_for('login') }}">LOGIN</a></button>
+                <button>
+                    <a href="{{ url_for('registro') }}">REGISTRARSE</a>
+                </button>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

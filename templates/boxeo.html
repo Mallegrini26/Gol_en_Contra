@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BOXEO</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/boxeo2.css') }}"
+        />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="imagenes/x-icon"
+            href="{{ url_for('static', filename='imagenes/pelota de futbol.jpg') }}"
+        />
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <h1 class="titulo">
+                BOXEO
+                <a id="seccion2" href="#seccion1"
+                    ><button type="button" class="btn btn-primary">
+                        IR ABAJO
+                    </button></a
+                >
+            </h1>
+            <div class="div-logo">
+                <img
+                    class="logo-header"
+                    src="{{ url_for('static',filename='imagenes/logo de boxeo.webp') }}"
+                    alt=""
+                />
+                <img
+                    class="logo-header"
+                    src="{{ url_for('static',filename='imagenes/Logo de boxeo 2.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="logo-header"
+                    src="{{ url_for('static',filename='imagenes/Guantes de boxeo.jpg') }}"
+                    alt=""
+                />
+            </div>
+        </header>
+        <!--Nav-->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index')}}">INICIO</a></li>
+                <li><a href="#seccion5">BOXEO ARGENTINO</a></li>
+                <li><a href="#seccion6">BOXEO INTERNACIONAL</a></li>
+                <li><a href="#seccion7">AFICHES DE GRANDES PELEAS</a></li>
+                <li><a href="#seccion8">LEYENDAS DEL BOXEO</a></li>
+            </ul>
+        </nav>
+        <!--Main-->
+        <main>
+            <h2 id="seccion5" class="h2">BOXEO ARGENTINO</h2>
+            <div class="contenedor">
+                <div class="div-1">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Fabian TNT Maidana.webp') }}"
+                        alt=""
+                    />
+                    Maidana expondrá su cetro latino welter de la CMB. En un
+                    inusual día para los guantes, el hermano del Chino expone su
+                    cetro vs. el nicaragüense Israel López en una velada con más
+                    combates.
+                </div>
+                <div class="div-1">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Rodrigo Ruiz.jpg') }}"
+                        alt=""
+                    />
+                    La Federación Argentina presenta este viernes una
+                    interesante velada con el tucumano de principal y otras
+                    peleas que se las traen.
+                </div>
+                <div class="div-1">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Luciano Amayajpg.webp') }}"
+                        alt=""
+                    />
+                    El impactante KO del argentino Luciano Amaya en los Juegos
+                    Panamericanos: le cortó el pómulo a su rival. El boxeador
+                    protagonizó uno de los dos triunfos argentinos de la jornada
+                    en Santiago.
+                </div>
+                <button type="button" class="btn btn-secondary">
+                    <a href="{{ url_for('boxeo2') }}">MAS INFORMACIÓN</a>
+                </button>
+            </div>
+            <h2 id="seccion7" class="h2">AFICHES DE GRANDES PELEAS</h2>
+            <div class="div-2">
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la pelea Roberto Durán vs Marvin Hagler.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/foto 1 de grandes boxeadores.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la pelea Benvenuti vs Monzón.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la Pelea Bonavena vs Ali.png') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la pelea De La Hoya vs Chavez.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la pelea Holyfield vs Tyson.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la Pelea Marvin Hagler vs Sugar Ray Leonad.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la pelea Mayweather vs McGregor.webp') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la pelea Mayweather vs Pacquiao.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la Pelea Roberto Duran vs Sugar Ray Leonard.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/Afiche de la pelea Pacquiao vs Márquez.jpg') }}"
+                    alt=""
+                />
+                <img
+                    class="img-boxeo"
+                    src="{{ url_for('static',filename='imagenes/foto 2 de grandes boxeadores.jpg') }}"
+                    alt=""
+                />
+            </div>
+            <h2 id="seccion6" class="h2">BOXEO INTERNACIONAL</h2>
+            <div class="contenedor">
+                <div class="div-1">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Valuev.jpg') }}"
+                        alt=""
+                    />
+                    El ex boxeador es uno de los 200.000 reservistas llamados
+                    por Vladimir Putin para combatir en la Guerra de Ucrania.
+                </div>
+                <div class="div-1">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Tyson Fury.jpg') }}"
+                        alt=""
+                    />
+                    El británico retuvo su cinturón de peso pesado del Consejo
+                    Mundial de Boxeo (CMB) con un espectacular nocaut sobre su
+                    compatriota ante 94.000 espectadores.
+                </div>
+                <div class="div-1">
+                    <img
+                        class="img-1"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Gennady Golovkin.jpg') }}"
+                        alt=""
+                    />
+                    El kazajo le ganó al japonés Ryota Murata en el noveno
+                    round, luego de 16 meses sin actividad, y unificó los
+                    cinturones de la Federación Internacional de Boxeo (FIB)
+                    -que ya poseía- y de la Asociación Mundial de Boxeo (AMB),
+                    en la categoría de pesos medios.
+                </div>
+                <button type="button" class="btn btn-secondary">
+                    <a href="{{ url_for('boxeo2') }}#seccion9"
+                        >MAS INFORMACIÓN</a
+                    >
+                </button>
+            </div>
+            <div>
+                <a id="seccion1" href="#seccion2"
+                    ><img
+                        class="logo-flechas1"
+                        src="{{ url_for('static',filename='imagenes/Flechas hacia-arriba-y-hacia-abajo.webp') }}"
+                        alt=""
+                /></a>
+                <a id="seccion4" href="#seccion3"
+                    ><img
+                        class="logo-flechas2"
+                        src="{{ url_for('static',filename='imagenes/Flechas hacia-arriba-y-hacia-abajo.webp') }}"
+                        alt=""
+                /></a>
+            </div>
+            <h2 id="seccion8" class="h2">
+                LOS 10 MEJORES BOXEADORES DE LA HISTORIA
+            </h2>
+            <div class="contenedor1">
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Carlos Monzón.jpg') }}"
+                        alt=""
+                    />
+                    Carlos Roque Monzón (San Javier, Argentina, 7 de agosto de
+                    1942-Santa Rosa de Calchines, Argentina, 8 de enero de 1995)
+                    fue un boxeador profesional argentino que también se
+                    desempeñó ocasionalmente como actor de cine, considerado por
+                    muchos especialistas como el máximo representante del boxeo
+                    argentino y uno de los mejores de la historia universal de
+                    esa práctica. Alcanzó el título de campeón mundial de la
+                    categoría mediano a fines de 1970 y lo retuvo hasta su
+                    retiro, en 1977. En el primer ranking libra por libra de
+                    todos los tiempos del sitio web Boxrec fue ubicado en la
+                    posición 7. La revista The Ring lo ubicó en el número 11 de
+                    la lista de los mejores boxeadores históricos libra por
+                    libra. Mientras que, tras una nueva lista, la prestigiosa
+                    revista BoxRec lo ubicó, esta vez, en el tercer lugar entre
+                    los mejores boxeadores de todos los tiempos. En 1990 fue
+                    incorporado al Salón Internacional de la Fama del Boxeo. El
+                    14 de febrero de 1988, asesinó a su expareja Alicia Muñiz,
+                    hecho por el que fue juzgado y condenado a once años de
+                    prisión por homicidio simple, dado que, por ese entonces, no
+                    existía un tratamiento especial para ese tipo de delitos. El
+                    hecho y el caso por asesinato marcó, en la sociedad
+                    argentina, el comienzo de la toma de conciencia sobre la
+                    violencia de género y el feminicidio. Falleció en 1995, en
+                    un accidente automovilístico, en una salida transitoria que
+                    había obtenido en el marco de su condena. Datos personales:
+                    Nombre completo: Carlos Alberto Monzón Apodo(s) Escopeta
+                    Nacimiento: San Javier, Santa Fe, 7 de agosto de 1942, País
+                    Argentina Nacionalidad(es):
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera Argentina.webp') }}"
+                        alt=""
+                    />
+                    Argentino Fallecimiento Santa Rosa de Calchines, Santa Fe 8
+                    de enero de 1995 (52 años) Altura: 1,81 m (5′ 11″) Peso:
+                    Mediano Pareja: Susana Giménez Carrera deportiva: Deporte:
+                    Boxeo Estilo: Ortodoxo Club: profesional Debut deportivo: 6
+                    de febrero de 1963 vs
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera Argentina.webp') }}"
+                        alt=""
+                    />
+                    Ramón Montenegro Entrenador: Amílcar Brusa (desde 1960)
+                    Retirada deportiva: 30 de julio de 1977 vs
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Colombia.webp') }}"
+                        alt=""
+                    />
+                    Rodrigo Valdez Combates: Totales: 100 Victorias: 87 Por KO:
+                    59 Por decisión: 28 Derrotas: 3 Por KO: 0 Por decisión: 3
+                    Empates: 9
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Rocky Marciano.webp') }}"
+                        alt=""
+                    />
+                    Rocco Francis Marchegiano, más conocido por su nombre
+                    pugilístico Rocky Marciano (Brockton, Massachusetts, 1 de
+                    septiembre de 1923-Newton, Iowa, 31 de agosto de 1969), fue
+                    un boxeador estadounidense de origen italiano que se retiró
+                    invicto, siendo el único campeón de boxeo de los pesos
+                    pesados que no conoció la derrota en su carrera y defendió
+                    en seis ocasiones el título, contra Jersey Joe Walcott,
+                    Roland La Starza, Ezzard Charles (dos ocasiones), Don
+                    Cockell y Archie Moore. También se mantuvo invicto en su
+                    época de boxeador en el ejército (1944-1946). Marciano tiene
+                    un impresionante registro de 43 nocauts, equivalente al
+                    87,76 %, de sus peleas, pese a su estilo de boxeo algo
+                    heterodoxo, como «agazapado». Fue campeón mundial de la
+                    categoría de los pesos pesados de boxeo en el periodo que
+                    transcurrió desde el 23 de septiembre de 1952 (cuando
+                    conquistó el título frente a Jersey Joe Walcott) hasta el 30
+                    de noviembre de 1956, día en el que, con casi 33 años,
+                    anunció su retirada después de defender el título en seis
+                    ocasiones. Su altura era de 180'3 cm (5 pies 11 pulgadas), y
+                    su peso de 82-88 kg (176-193 lb). La International Boxing
+                    Research Organization (IBRO) lo ha clasificado entre los 10
+                    mejores pesos pesados de la historia. Datos personales:
+                    Apodo(s): The Brockton Blockbuster, The Rock From Brockton,
+                    The Rock (La Roca) Nacimiento: Brockton (Massachusetts), 1
+                    de septiembre de 1923 Nacionalidad(es):
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    estadounidense Fallecimiento: Newton (Iowa), 31 de agosto de
+                    1969 (45 años) Altura: 1,80 m (5′ 11″) Peso: Pesos pesados
+                    Carrera deportiva: Deporte: Boxeo Estilo: Ortodoxo Combates:
+                    Totales: 49 Victorias: 49 Por KO: 43 Por decisión: 6
+                    Derrotas: 0 Empates: 0
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Mohamed Ali.jpg') }}"
+                        alt=""
+                    />
+                    Muhammad Ali o Mohamed Alí, (nacido como Cassius Marcellus
+                    Clay, Jr.; Louisville, Kentucky, 17 de enero de
+                    1942–Scottsdale, Arizona, 3 de junio de 2016) fue un
+                    boxeador estadounidense, considerado uno de los mejores de
+                    todos los tiempos. Fue una figura social de enorme
+                    influencia en su generación, en la política y en las luchas
+                    sociales o humanitarias a favor de los afroamericanos y del
+                    islam. En su etapa amateur como Cassius Clay logró la
+                    medalla de oro en los Juegos Olímpicos de Roma 1960 en la
+                    categoría de 75-81 kg y, como profesional, ganó el título de
+                    campeón indiscutido de la categoría de los pesos pesados en
+                    1964 a la edad de veintidós años. Finalmente, se convirtió
+                    en el único boxeador en conquistar en tres ocasiones el
+                    campeonato lineal (1964, 1974 y 1978) e indiscutido (1964,
+                    1967 y 1974) de peso pesado; y en el primero en conquistar
+                    cuatro veces un título mundial de peso pesado (el de la
+                    Asociación Mundial de Boxeo en 1964, 1967, 1974 y 1978). Se
+                    caracterizó por su estilo de boxeo alejado de la técnica
+                    tradicional, aunque era un conocedor del deporte y de sus
+                    contrincantes. Fue dirigido la mayor parte de su carrera por
+                    el entrenador Angelo Dundee, y sostuvo memorables combates
+                    contra los más renombrados pugilistas de su tiempo, como
+                    Archie Moore, Henry Cooper, Sonny Liston, Floyd Patterson,
+                    Ernie Terrell, Joe Frazier, George Foreman y Ken Norton.
+                    Seis de sus peleas han sido consideradas como las mejores
+                    del año por la revista The Ring. Vertía tanto opiniones
+                    claramente irreverentes sobre sus oponentes, como acertados
+                    pronósticos de sus contiendas. Fuera del cuadrilátero,
+                    Muhammad Ali se erigió como una figura con influencia social
+                    desde los años 1960 cuando se opuso a su reclutamiento por
+                    parte de las fuerzas armadas de su país durante la guerra de
+                    Vietnam. Se declaró objetor de conciencia, pese al rechazo
+                    de los defensores del nacionalismo estadounidense. Formó
+                    parte de la organización religiosa de la Nación del Islam y,
+                    aunque se ganó detractores por su conducta independiente de
+                    los estereotipos sobre los afroamericanos, a partir de los
+                    años 1970 consiguió el respeto como figura deportiva de
+                    renombre mundial, en especial tras su pelea contra George
+                    Foreman. En el ocaso de su carrera, empezó a dar muestras de
+                    desgaste físico; después de su retiro padeció la enfermedad
+                    de Parkinson. Entre numerosos reconocimientos recibió la
+                    Medalla Presidencial de la Libertad; el ingreso al Salón
+                    Internacional de la Fama del Boxeo; el título de «Rey del
+                    Boxeo» por parte del Consejo Mundial de Boxeo; y «Deportista
+                    del Siglo XX» por Sports Illustrated y la BBC, entre otros.
+                    Datos personales: Nombre de nacimiento: Cassius Marcellus
+                    Clay, Jr. Apodo(s): The Louisville Lip, The Champ, The
+                    Greatest, The People's Champion, Ali Nacimiento: 17 de enero
+                    de 1942, Louisville, Kentucky, Estados Unidos
+                    Nacionalidad(es):
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    Estadounidense Fallecimiento:3 de junio de 2016, (74 años)
+                    Scottsdale, Arizona, Estados Unidos Altura: 1,91 m (6′ 3″)
+                    Carrera deportiva: Deporte: Boxeo Estilo: Ortodoxo Debut
+                    deportivo: 29 de octubre de 1960, (Tunney Hunsaker, Freedom
+                    Hall de Louisville) Entrenador: Angelo Dundee (desde 1960)
+                    Retirada deportiva: 11 de diciembre de 1981, (Trevor
+                    Berbick, Nasáu-Bahamas) Combates: Totales: 61 Victorias: 56
+                    Por KO: 39 Por decisión: 19 Derrotas: 5 Por KO: 1 Por
+                    decisión: 4
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Ringo Bonavena.jpg') }}"
+                        alt=""
+                    />
+                    Oscar Natalio Bonavena (Buenos Aires; 25 de septiembre de
+                    1942-Reno, Estados Unidos; 22 de mayo de 1976), conocido
+                    públicamente como «Ringo» Bonavena, fue un boxeador de peso
+                    pesado argentino, actor y cantante. Nacido en Buenos Aires,
+                    comenzó su carrera como boxeador amateur a finales de la
+                    década de los 50', desde mediados de los años 1960 hasta
+                    inicios de los años 1970 fue uno de los principales
+                    contendientes al título mundial. Junto a su carrera, su fama
+                    también se incrementó dándole otras ocupaciones como la
+                    actuación o la música. Bonavena falleció a causa de un
+                    disparo en una disputa con un mafioso siciliano a mediados
+                    de los años 1970 dejando un gran legado cultural en
+                    Argentina. Biografía: Bonavena nació en Boedo, Buenos Aires
+                    el 25 de septiembre de 1942, fue hijo de inmigrantes
+                    italianos. Después de finalizar los estudios primarios
+                    empezó a trabajar como vendedor de la línea Coca-Cola en el
+                    estadio Tomás Adolfo Ducó. Datos personales: Apodo(s): Ringo
+                    Nacimiento: 22 de mayo de 1976,
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera Argentina.webp') }}"
+                        alt=""
+                    />
+                    Buenos Aires, Argentina Nacionalidad(es):
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera Argentina.webp') }}"
+                        alt=""
+                    />
+                    Argentino Fallecimiento: 22 de mayo de 1976, (33 años),
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    Reno, Nevada, Estados Unidos Altura: 1,79 m (5′ 10″)1​ Peso:
+                    93 kg Carrera deportiva: Deporte: Boxeo Disciplina: Peso
+                    pesado Estilo: Ortodoxo Club: profesional Debut deportivo: 3
+                    de enero de 1964 Combates: Totales: 68 Victorias: 58 Por KO:
+                    44 Por decisión: 13 Derrotas: 7 Por KO: 1 Por decisión: 6
+                    Empates: 1
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Sugar Ray Leonard.jpg') }}"
+                        alt=""
+                    />
+                    Ray Charles Leonard (Wilmington, Carolina del Norte, 17 de
+                    mayo de 1956) es un ex boxeador profesional estadounidense
+                    primero en la historia del boxeo profesional que logró
+                    títulos mundiales en cinco categorías, y considerado uno de
+                    los mejores, más populares y exitosos boxeadores de todos
+                    los tiempos. Su carrera de amateur fue completamente sólida
+                    e inigualable obteniendo un récord de 145-5, 75 por KO. Ganó
+                    muchos campeonatos, entre ellos una medalla de oro en los
+                    Juegos Olímpicos de Montreal 1976 y el campeonato nacional
+                    de los Guantes de Oro en 1973 y 1974. Logra su consolidación
+                    definitiva tras vencer al por entonces campeón mundial
+                    Wélter del WBC, Wilfred Benítez. En junio de 1980, decide
+                    medir fuerzas con Roberto "Mano de Piedra" Durán considerado
+                    el mejor peso ligero de la historia, protagonizando la
+                    denominada "Pelea del Siglo". Pero surgió la sorpresa y el
+                    panameño, en uno de los más emocionantes combates
+                    recordados, gana con toda justicia. La euforia por otra
+                    pelea fue tal, que se organizó la revancha en noviembre de
+                    ese mismo año, en donde Leonard recuperaría el Título
+                    Mundial, luego de que Durán se negara a seguir la pelea
+                    transcurriendo el octavo asalto en una pelea donde Sugar
+                    pidió un entarimado tamaño especial 21 x 21. En 1981,
+                    nuevamente edita uno de los combates más emocionantes de la
+                    historia del pugilismo, ante Thomas Hearns, para unificar
+                    los títulos WBC y WBA de los Welters. En el asalto 14, y
+                    tras unas durísimas combinaciones, el árbitro se ve obligado
+                    a detener el combate ante la superioridad manifiesta de
+                    Sugar. Tras el triunfo es considerado el mejor Peso Wélter
+                    de la historia. En febrero de 1982, los médicos descubren
+                    que Leonard tiene un desprendimiento de retina, por lo cual
+                    no puede seguir peleando. Ahí aparece su primer retirada del
+                    boxeo. Retornó el 11 de mayo de 1984, noqueando a Kevin
+                    Howard en nueve episodios y volvió a desaparecer de los
+                    cuadriláteros hasta que tres años más tarde sorprendió al
+                    mundo del deporte una vez más, cuando se anunció que
+                    pelearía contra el campeón mediano Marvin "Marvelous"
+                    Hagler. El combate generó un enorme interés, y se anunció
+                    como la "Súperpelea de los '80". Ante todos los pronósticos,
+                    y en una espectacular pelea, Leonard era declarado nuevo
+                    campeón de Peso Mediano del mundo, por decisión dividida,
+                    que significó su tercera coronación en diferentes
+                    categorías. Tras otro anuncio de retiro, en noviembre de
+                    1988 regresa, peleando con Don Lalonde, pero es tirado en el
+                    cuarto asalto por un corte en la nariz. Sin embargo se
+                    levanta y lo noquea en el noveno asalto, ganando 2 títulos
+                    en una sola pelea, el de los Pesos Supermediano y
+                    Semipesado, respectivamente. En 1989, reedita sendos
+                    clásicos ante Thomas Hearns y Roberto Durán, empatando con
+                    Hearns y derrotando a Durán por puntos. Sin embargo, el 9 de
+                    febrero del año siguiente un joven Terry Norris, en uno de
+                    sus mejores momentos, gana por decisión unánime a Leonard en
+                    forma categórica y, a juicio de algunos, perdonándole un KO.
+                    seguro en los últimos asaltos. El estadounidense volvió a
+                    anunciar su retirada. En 1997, a los 40 años, hizo su última
+                    aparición, siendo derrotado ante el entonces ex campeón
+                    mundial de peso ligero Héctor Camacho. Ese mismo año,
+                    Leonard fue incluido en el Salón de la Fama del Boxeo. Datos
+                    personales: Nombre completo: Ray Charles Leonard Apodo(s):
+                    Sugar Nacimiento: 17 de mayo de 1956 (67 años), Wilmington,
+                    Carolina del Norte, Estados Unidos Nacionalidad(es):
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    Altura: 1,78 m (5′ 10″) Peso: Wélter, mediano, mediopesado
+                    Carrera deportiva: Deporte: Boxeo Estilo: Ortodoxo Club:
+                    profesional Debut deportivo: 1974 (18 años) Entrenador:
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    Angelo Dundee (1980-1997) Retirada deportiva: 1 de marzo de
+                    1997 vs
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Puerto Rico.webp') }}"
+                        alt=""
+                    />
+                    Héctor Camacho Combates: Totales: 40 Victorias: 36 Por KO:
+                    25 Por decisión: 11 Derrotas: 3 Por KO: 1 Por decisión: 2
+                    Empates: 1
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Mano de Piedra Duran.jpg') }}"
+                        alt=""
+                    />
+                    Roberto Durán Samaniego (El Chorrillo, Panamá, 16 de junio
+                    de 1951), es un exboxeador panameño, apodado «Mano de
+                    Piedra» o «El Cholo». Durán es mundialmente reconocido como
+                    el mejor peso ligero (135 libras) de todos los tiempos, y
+                    también catalogado ampliamente por cronistas deportivos e
+                    historiadores como uno de los mejores libra por libra de
+                    toda la historia del boxeo. Derrotó en el peso ligero a
+                    otros campeones contemporáneos tales como Esteban de Jesús,
+                    Suzuki -Guts- Ishimatzu y fue capaz de llevar el boxeo
+                    hispano a los más altos niveles, enfrentándose a muchos de
+                    los mejores boxeadores de todas las épocas en distintas
+                    categorías boxísticas, realizando combates memorables. El
+                    veterano cronista estadounidense Rich O´Brien catalogó a
+                    Durán en el número tres entre Los diez más grandes
+                    boxeadores libra por libra. La revista Sports Illustrated lo
+                    reconoció como el mejor peso ligero de todos los tiempos. El
+                    cronista deportivo argentino/mexicano Eduardo Lamazón
+                    considera a Durán como el mejor boxeador de la historia, en
+                    todos los pesos. Ring Magazine lo cataloga como el quinto
+                    mejor boxeador en la historia del deporte, mientras que la
+                    cadena deportiva ESPN lo cataloga como el segundo mejor
+                    boxeador de los últimos 50 años. Ascenso al peso wélter y
+                    combates contra Ray Leonard En 1979 Durán abdica a sus
+                    títulos ligeros y en vez de hacer carrera en la división
+                    inmediata que era la superligera o 140 libras, opta por
+                    subir directamente a los wélter o 147 libras, obteniendo
+                    importantes victorias ante Adolfo Viruet (15-2-0), Monroe
+                    Brooks, (39-4-3) Jimmy Heair, (73-17-1) y el 20 de junio de
+                    1980, tras derrotar previamente al excampeón mundial wélter,
+                    el mexicano Carlos Palomino, (27-2-3) gana el derecho a
+                    optar por la corona wélter retando a Sugar Ray Leonard,
+                    quien para esa época emergía como la principal figura
+                    boxística mundial con el retiro de Muhammad Ali. Enfrentó,
+                    en una velada denominada Brawl in Montreal, al estelarísimo
+                    Sugar Ray Leonard el título mundial del peso wélter en
+                    versión del Consejo Mundial de Boxeo ante 46 000
+                    espectadores, con victoria por decisión unánime en una pelea
+                    considerada una de la más importantes de los últimos 40
+                    años. Durán en las ruedas de prensa se dedicó a intimidar y
+                    presionar psicológicamente al estadounidense y el combate lo
+                    llevó a su terreno peleando a la corta y media distancia,
+                    llevando siempre la iniciativa y conectando los más
+                    contundentes golpes durante quince asaltos. El título
+                    obtenido lo pierde meses más tarde ante el mismo Leonard por
+                    descalificación al abandonar en el octavo asalto. Esta
+                    controvertida pelea fue bautizada por el cronista Howard
+                    Cossell como el «NO MÁS»; en ella se alegó que el panameño
+                    sufrió calambres a causa de una deshidratación por las
+                    libras que perdió para poder hacer el peso reglamentario en
+                    muy poco tiempo. Datos personales: Nombre completo: Roberto
+                    Durán Samaniego Apodo(s): Mano de Piedra, El Cholo, El
+                    Ciclón del Istmo. Nacimiento: 16 de junio de 1951 (72 años),
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Panama.webp') }}"
+                        alt=""
+                    />
+                    Ciudad de Panamá, Panamá Nacionalidad(es):
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Panama.webp') }}"
+                        alt=""
+                    />, Panameño Altura: 1,7 m (5′ 7″) Carrera deportiva:
+                    Deporte: Boxeo Estilo: Ortodoxo Debut deportivo: 23 de
+                    febrero de 1968 vs Carlos Mendoza, Colón, Panamá Retirada
+                    deportiva: 14 de julio de 2001 vs
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Puerto Rico.webp') }}"
+                        alt=""
+                    />
+                    Héctor Camacho, Denver, Colorado, Estados Unidos Combates:
+                    Totales: 119 Victorias: 103 Por KO: 70 Por decisión: 32
+                    Derrotas: 16 Por KO: 4 Por decisión: 12
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static', filename='imagenes/Boxeador Julio Cesar Chavez.jpg') }}"
+                        alt=""
+                    />
+                    Julio César Chávez González (Ciudad Obregón , Sonora; 12 de
+                    julio de 1962) es un ex boxeador profesional mexicano que
+                    compitió profesionalmente entre 1980 y 2005, obteniendo
+                    títulos mundiales en tres diferentes divisiones de peso:
+                    superpluma, ligero, y superligero. Acumuló 107 victorias (87
+                    de ellas por nocaut), dos empates ante Pernell Whitaker y
+                    Miguel Ángel González, y seis derrotas ante Frankie Randall,
+                    Óscar de la Hoya, Willy Wise, Kostya Tszyu Grover Wiley.
+                    Triunfó en sus primeros 87 combates, y fue derrotado por
+                    primera vez en su enfrentamiento número 90. Fue reconocido
+                    por su pegada, su poderoso gancho al hígado, el incesante
+                    presión a sus oponentes y una mandíbula extremadamente
+                    resistente. Es considerado uno de los mejores libra por
+                    libra del mundo en la década de 1990, y también como el
+                    mejor boxeador mexicano de la historia. Fue incluido en el
+                    Salón Internacional de la Fama del Boxeo en la edición 2011.
+                    Datos Personales: Nombre: Julio César Chávez González
+                    Nacimiento: 12 de julio de 1962 (61 años),
+                    <img
+                        src="{{ url_for('static', filename='imagenes/Bandera de México.webp') }}"
+                        alt=""
+                    />
+                    Cocorit , Sonora ; México Apodo: sr. Nocaut, El mexicano, El
+                    Gran Campeón Mexicano, JC, El César del Boxeo. Estilo:
+                    Ortodoxo Peso: Superpluma, Ligero, Superligero, Wélter
+                    Estatura: 1,72 m (5′ 8″) Nacionalidad:
+                    <img
+                        src="{{ url_for('static', filename='imagenes/Bandera de México.webp') }}"
+                        alt=""
+                    />, México Residencia Tijuana, Baja California, México
+                    Hijo(s) Julio César Chávez, Jr. Omar Chávez Cristian Chávez
+                    Carrasco Nicole Chávez Estadísticas: Total: 115 Victorias:
+                    107 Por nocaut: 87 Derrotas: 6 Empates: 2
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Mike Tyson.jpg') }}"
+                        alt=""
+                    />
+                    Michael Gerard Tyson (Nueva York; 30 de junio de 1966),
+                    también conocido como Malik Abdul Aziz, es un exboxeador
+                    estadounidense. Ganó dos veces el título mundial de los
+                    pesos pesados en la década de los 80 y es el boxeador más
+                    joven de la historia en conseguir un título mundial de los
+                    pesos pesados cuando el 22 de noviembre de 1986 ganó el
+                    título de la WBC ante Trevor Berbick, con tan solo 20 años,
+                    4 meses y 22 días. Más tarde conseguiría unificar todas las
+                    coronas ante los campeones James Smith (WBA) y Tony Tucker
+                    (IBF), siendo derrotado, después de varias defensas, por
+                    James "Buster" Douglas en 1990. En 1992 fue encarcelado por
+                    la violación de Desiree Washington, una modelo de 18 años.
+                    El 26 de marzo fue sentenciado a 10 años, 6 en prisión y 4
+                    de libertad condicional. Fue liberado por buena conducta en
+                    marzo de 1995, regresando al ring ese mismo año. Volvió a
+                    ganar el título mundial en 1996, pero lo perdió ante Evander
+                    Holyfield pocos meses después. En 1997, en la revancha ante
+                    Holyfield arrancó un pedazo de la oreja derecha a su
+                    oponente, y tras ser advertido por el árbitro y volver a
+                    intentar morderle fue descalificado y sancionado durante
+                    doce meses. Siguió peleando y a los 35 años volvió a luchar
+                    por el título mundial ante Lennox Lewis, pero fue derrotado,
+                    retirándose tres años más tarde. En 2003 se declaró en
+                    bancarrota después de haber cobrado 30 millones de dólares
+                    en algunas de sus peleas y alrededor de 300 millones de
+                    dólares en el conjunto de su carrera. Mike fue muy conocido
+                    por su ferocidad e intimidación como boxeador,
+                    protagonizando numerosos altercados dentro y fuera del
+                    cuadrilátero. Apodado "Iron" y "Kid Dynamite" al comienzo de
+                    su carrera. Ha sido considerado como uno de los mejores
+                    pesos pesados de la historia. Fue clasificado en el puesto
+                    número 16 por la revista The Ring en la lista de los cien
+                    pegadores más grandes de todos los tiempos y número uno para
+                    la ESPN en su lista de los mejores pegadores de la historia
+                    de los pesos pesados. Sky Sports lo listó como el «boxeador
+                    más temido» y lo describió como «quizá el más feroz luchador
+                    sobre un cuadrilátero de boxeo». Fue incluido en el Salón de
+                    la Fama del Boxeo Mundial en 2010 y en el Salón
+                    Internacional de la Fama del Boxeo al año siguiente. Datos
+                    personales: Nombre completo: Michael Gerard Tyson Apodo(s):
+                    Kid Dynamite, Iron Mike, The Baddest Man on the Planet
+                    Nacimiento: 30 de junio de 1966 (57 años),
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    Nueva York, Estados Unidos Nacionalidad(es)
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    Estadounidense Altura: 1,78 m (5′ 10″) Peso: Peso pesado
+                    Carrera deportiva: Deporte: Boxeo Estilo: Peek-a-boo
+                    Combates: Totales: 56 Victorias: 50 Por KO: 44 Por decisión:
+                    6 Derrotas: 6 Por KO: 5 Empates: 0
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Manny Pacquiao.jpg') }}"
+                        alt=""
+                    />
+                    Emmanuel Pacquiao y Dapidran (Kibawe, 17 de diciembre de
+                    1978), más conocido como Manny «Pac-Man» Pacquiao, es un
+                    exboxeador, actor, cantante y político filipino. Es el único
+                    boxeador en ser campeón de hasta 8 categorías de peso
+                    distintas y el actual presidente nacional del partido
+                    político PDP–Laban. Fue considerado uno de los mejores
+                    púgiles libra por libra por la revista The Ring, así como
+                    uno de los mejores de la historia. En palabras del afamado
+                    promotor de boxeo Bob Arum: "Pacquiao es el mejor boxeador
+                    que jamás he visto, incluido Alí”. Nombrado "Boxeador de la
+                    Década" por el WBC, es el único púgil que ha logrado nueve
+                    títulos mundiales en ocho categorías diferentes: Peso mosca
+                    del Consejo Mundial de Boxeo, peso supergallo de la
+                    Federación Internacional de Boxeo, peso pluma para The Ring,
+                    peso superpluma y ligero del WBC, peso superligero para The
+                    Ring y peso wélter (2 veces), súper wélter de la WBO y súper
+                    wélter de la AMB. Anunció su retirada de los cuadriláteros
+                    el sábado 9 de abril de 2016 tras derrotar a Timothy
+                    Bradley. Pacquiao vuelve de su retirada el 5 de noviembre de
+                    2016 para enfrentarse al campeón mundial de peso wélter
+                    Jessie Vargas a quien derrota. Datos personales: Nombre
+                    completo: Emmanuel Pacquiao y Dapidran Apodo(s): Manny,
+                    Pac-Man Nacimiento: 17 de diciembre de 1978 (44 años),
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Filipinas.webp') }}"
+                        alt=""
+                    />
+                    Kibawe, Bukidnon, Filipinas Nacionalidad(es):
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Filipinas.webp') }}"
+                        alt=""
+                    />
+                    Filipina Altura: 1,67 m (5′ 6″) Peso: Mosca Supergallo Pluma
+                    Superpluma Ligero Superligero Wélter Superwélter Carrera
+                    deportiva: Deporte: Boxeo Estilo: Zurdo Club: profesional
+                    Debut deportivo: 22 de enero de 1995 vs
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Filipinas.webp') }}"
+                        alt=""
+                    />
+                    Edmund Enting Ignacio Entrenador:
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Filipinas.webp') }}"
+                        alt=""
+                    />
+                    Buboy Fernández,
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />, Unidos Freddie Roach Combates: Totales: 71 Victorias: 62
+                    Por KO: 39 Por decisión: 23 Derrotas: 8 Por KO: 3 Por
+                    decisión: 5 Empates: 2
+                </div>
+                <div class="leyendas">
+                    <img
+                        class="img"
+                        src="{{ url_for('static',filename='imagenes/Boxeador Floyd Mayweather.jpg') }}"
+                        alt=""
+                    />
+                    Floyd Joy Mayweather, Jr. apodado Money (Grand Rapids,
+                    Míchigan, 24 de febrero de 1977), nacido como Floyd Joy
+                    Sinclair, es un exboxeador estadounidense invicto. Es hijo
+                    del exboxeador Floyd Mayweather Sr. y sobrino de los también
+                    exboxeadores Jeff Mayweather y Roger Mayweather, siendo
+                    además pupilo de este último quien fuera en su momento
+                    campeón mundial. Fue campeón del mundo en cinco categorías
+                    distintas: superpluma, ligero, superligero, wélter y
+                    superwelter; considerado durante mucho tiempo el mejor
+                    boxeador libra por libra según la revista The Ring gracias a
+                    una técnica muy depurada, desplazamientos constantes a lo
+                    largo del ring y capacidad para controlar el ritmo del
+                    combate a voluntad. Fue considerado el deportista rey del
+                    pago por visión (PPV), ya que vendió a lo largo de su
+                    carrera cerca de 25 millones de eventos en esta modalidad de
+                    televisión por suscripción, por un valor global de más de
+                    2500 millones de dólares. Algunos de sus combates se
+                    encuentran entre los cuatro eventos más vendidos en la
+                    historia de los PPV´s: las peleas sostenidas contra Saúl
+                    "Canelo" Álvarez (2.2 millones), Oscar de la Hoya (2.4
+                    millones), Manny Pacquiao (4.6 millones) y, el de su retiro
+                    definitivo, contra Conor McGregor (4.3 millones). Datos
+                    personales: Nombre completo: Floyd Joy Mayweather Jr.
+                    Apodo(s): Money, Pretty Boy, TBE Nacimiento: 24 de febrero
+                    de 1977 (46 años),
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    Grand Rapids, Míchigan País Bandera de Estados Unidos
+                    Estados Unidos Nacionalidad(es):
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de EEUU.webp') }}"
+                        alt=""
+                    />
+                    Estadounidense Altura: 1,73 m (5′ 8″) Peso: Superpluma
+                    Ligero Superligero Wélter Superwelter Carrera deportiva:
+                    Deporte Boxeo Estilo: Ortodoxo Club: profesional Debut
+                    deportivo: 11 de octubre de 1996 vs Roberto Apodaca
+                    Entrenador Bandera de Estados Unidos Roger Mayweather
+                    Retirada deportiva 26 de agosto de 2017 vs
+                    <img
+                        src="{{ url_for('static',filename='imagenes/Bandera de Irlanda.webp') }}"
+                        alt=""
+                    />
+                    Conor McGregor Combates: Totales: 50 Victorias: 50 Derrotas:
+                    0 Por KO: 0 Por decisión: 0 Empates: 0
+                </div>
+            </div>
+            <div class="div-boton">
+                <a id="seccion3" href="#seccion4"
+                    ><button type="button" class="btn btn-success">
+                        ARRIBA
+                    </button></a
+                >
+            </div>
+        </main>
+        <footer>
+            <p>DERECHOS RESERVADOS</p>
+            <p>TRABAJO PRÁCTICO EXAMEN FINAL</p>
+            <p>MARCELO ALLEGRINI</p>
+            <div class="boton">
+                <button><a href="{{ url_for('login') }}">LOGIN</a></button>
+                <button>
+                    <a href="{{ url_for('registro') }}">REGISTRARSE</a>
+                </button>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
